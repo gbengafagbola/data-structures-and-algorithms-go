@@ -1,7 +1,7 @@
 package main
 import ("fmt")
 
-func sumArray(data []int) int { 
+func SumArray(data []int) int { 
 	total := 0
 	  
 	//Implement your solution here
