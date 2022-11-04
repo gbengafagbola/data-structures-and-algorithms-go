@@ -1,7 +1,7 @@
 ## Data Structures & Algorithm in GO :sparkles:
 
 
-> Aim: Documenting my Path/Process in mastery of data structure & algorithm in go, and sharing my solutions/approaches.
+> About: My Path/Process in mastery of DSA in go, and sharing my solutions/approach.
 ___
 
 #### Folder Structure
