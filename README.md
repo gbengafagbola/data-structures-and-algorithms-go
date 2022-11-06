@@ -1,7 +1,8 @@
 ## Data Structures & Algorithm in GO :sparkles:
 
 
-> ### about: My Path/Process in mastery of DSA in go, and sharing my solutions/approach.
+> ### About: 
+My Path/Process in mastery of DSA in go, and sharing my solutions/approach.
 ___
 
 #### Folder Structure
