@@ -1,14 +1,15 @@
 ## Data Structures & Algorithm in GO :sparkles:
 
 
-My Path/Process in mastery of DSA in go, and sharing my solutions/approach.
+
+**About:** My Path/Process in mastery of DSA in go, and sharing my solutions/approach.
 ___
 
-#### Folder Structure
+#### FOLDER STRUCTURE
 
-1. Array 
-   - Sum Array: Summation of all element in an Array
-   - Sequential Search: Search for element x in an un-ordered list
+1. **array** 
+   - sum array: summation of all element in an array
+   - sequential search: search for element x in an un-ordered list
 
 
 
