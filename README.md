@@ -5,11 +5,12 @@
 **About:** My Path/Process in mastery of DSA in go, and sharing my solutions/approach.
 ___
 
-#### FOLDER STRUCTURE
+## Folder Structure
 
-1. **array** 
-   - sum array: summation of all element in an array
-   - sequential search: search for element x in an un-ordered list
+1. Arrays 
+   - **Sum Array**: Summation of all element in an Array
+   - **Sequential Search**: Search for element x in an un-ordered list
+   - **Binary Search**: Search for element x in an ordered list
 
 
 
