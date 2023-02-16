@@ -1,7 +1,7 @@
 package main
 import "fmt"
 
-// Naive solution of finding maximum sub array sum
+// Naive solution of finding maximum sub array sum 
 func MaxSubArraySum(data []int) int {
     max := data[0]
     sum := 0
