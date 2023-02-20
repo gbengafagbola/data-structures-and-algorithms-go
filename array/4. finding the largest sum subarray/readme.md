@@ -2,7 +2,7 @@
 
 where by looking for all possible subarrays starting from the first element and traversing the array for each possible sum combination.
 
-arr := []int{1, -2, 3, 4, -4, 6, -14, 6, 2}
+arr := []int{1, -2, 3, 4, -4, 6, -14, 6, 2} <br />
 ans := 9
 
 > Explanation
