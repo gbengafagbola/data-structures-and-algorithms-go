@@ -46,5 +46,8 @@ func main() {
 	// fmt.Println("MaxSubArraySum:", NaiveMaxSubArraySum(arr))
 }
 
-//  Time Complexity
+//  Time Complexity MaxSubArraySum
+// O(n)
+//  Time Complexity NaiveMaxSubArraySum
 // O(n^2)
+
