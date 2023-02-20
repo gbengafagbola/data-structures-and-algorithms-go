@@ -1,4 +1,4 @@
-### Challenge: Find the largest sum sub array.
+## Challenge: Find the largest sum sub array.
 
 where by looking for all possible subarrays starting from the first element and traversing the array for each possible sum combination.
 
@@ -26,9 +26,9 @@ example of expected sub-arrays are:
 
 - if the sum is greater than the max we update the max
 
--and finally return the max at hte end of the array
+- and finally return the max at hte end of the array
 
-in a single scan, the max subarray in the array is discovered unlike that of the naive approach.
+**In a single scan, the max subarray in the array is discovered unlike that of the naive approach**
 
 ###### Write a method that returns largest sum subarray.
 
