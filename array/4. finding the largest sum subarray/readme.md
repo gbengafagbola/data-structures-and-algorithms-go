@@ -1,42 +1,35 @@
-### Challenge: Binary Search
+### Challenge: Find the largest sum sub array.
+
+where by looking for all possible subarrays starting from the first element and traversing the array for each possible sum combination.
+
+arr := []int{1, -2, 3, 4, -4, 6, -14, 6, 2}
+ans := 9
 
 > Explanation
 
-This can simply be solved by creating 3 indicators
+The naive solution (**NaiveMaxSubArraySum function**) was a quick fix approach which shouldn’t be used even in a life & death situation but maybe an
+exception were a bad answer is better than none. But the concept was a way to keep track of every iteration which was further developed in the next solution (**MaxSubArraySum**) by summing all possible subarrays to find the maximum.
 
-- low/start: which indicates the starting-point/position of the first element in the array 
-- high/end: which indicates the position of the ending-point/last element in the array 
-- middle/median: which indicates the position of the average element in the array 
+For further clarification
+example of expected sub-arrays are:
+[1], [1,-2], [1,-2,3] ..... 
 
-> Logic 
-The logic behind this algorithm is about having a continous iteration while the condition of start(0) remains less than end(8). then making use of if/else statement to check if the data is found or not. If not found and the median value position 
+- sum := 0
+>  initialized to 0 & keeps track of the maximum value of the current sub arrays
 
-example: 
+- max := 0
+> nitialized to 0 & keeps track of  the maximum value across all sub arrays 
 
-value: 8
-arr := []int{1,2,3,4,5,6,7,8,9}
+- then a foor loop is used to traverse the array to automate the sum
 
-position: 0  1  2  3  4  5  6  7  8 
-          |  |  |  |  |  |  |  |  |
-array:    1  2  3  4  5  6  7 [8] 9 
-          |           |           |
-          S           M           E
+- if the sum is less than 0, the sum has to be reset to 0 (since we're keeping track of the largest +ve summation)
 
+- if the sum is greater than the max we update the max
 
-start: 0                      // (instantiated to 0)
-end: len(array) - 1           // (9-1 = 8)   
+-and finally return the max at hte end of the array
 
-median: (start + end)/2       // (0+8/2 = 4)
+in a single scan, the max subarray in the array is discovered unlike that of the naive approach.
 
-array[median] == value        // return true 
-array[median] != value        // 5 != 8 hence false so iteration continues
+###### Write a method that returns largest sum subarray.
 
-since array[median] < value   // we update start to be median + 1  so start = 5 
-if    array[medium] > value   // then end would be median - 1 as we move towards narrowing our search 
-
-this process would be repeated till we find our value or start > end and retun's false stating value wasn't found.
-
-
-###### Write a method that searches for a given value in a sorted array.
-
- [source](https://www.educative.io/courses/data-structures-and-algorithms-go/RMwj6Vo8LIE)
+ [source](https://www.educative.io/courses/data-structures-and-algorithms-go/3Ylv3mNNkrr)
