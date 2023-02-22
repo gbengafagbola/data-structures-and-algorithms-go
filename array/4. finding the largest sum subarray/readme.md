@@ -18,7 +18,7 @@ example of expected sub-arrays are:
 >  initialized to 0 & keeps track of the maximum value of the current sub arrays
 
 - max := 0
-> nitialized to 0 & keeps track of  the maximum value across all sub arrays 
+> initialized to 0 & keeps track of  the maximum value across all sub arrays 
 
 - then a foor loop is used to traverse the array to automate the sum
 
