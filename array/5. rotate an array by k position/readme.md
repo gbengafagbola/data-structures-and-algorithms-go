@@ -3,6 +3,7 @@
 where by we are given an array and asked to rotate its element by k times
 
 > Sample Input
+
 arr := []int{1, 2, 3, 4, 5, 6} <br />
 k = 2
 
