@@ -16,7 +16,7 @@ array = {3, 4, 5, 6, 1, 2}
 **My thought process towards solving this algorithm was**
 - slice out character from the 0<sup>th</sup> to the K<sup>th</sup> and store in an array (let call this array 1)
 - slice out character from the K<sup>th</sup> up to the last character in the array (lets call this array 2)
-- concantinate the the two array (such as array2 + array 1)
+- concantenate the the two array (such as array2 + array 1)
 
 
 ######  Rotate an Array by K position.

@@ -12,7 +12,6 @@ func RotateArray (data []int, k int){
 	}
 }
 
-
 func main() {
 	data := []int{1, 2, 3, 4, 5, 6}
 	RotateArray(data, 2)
