@@ -8,7 +8,7 @@ This can simply be solved by creating 3 indicators
 - **end**: which indicates the position of the ending-point/last element in the array 
 - **median**: which indicates the position of the average element in the array 
 
-> Logic
+> Logic - Thought Process
 
 The logic behind this algorithm is about having a continous iteration while the condition of start at index of (0) remains less than end index of (8). then making use of if/else statement to check if the data is found or not. If not found and the median value position 
 

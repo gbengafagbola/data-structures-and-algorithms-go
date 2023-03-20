@@ -17,3 +17,6 @@ func main() {
 	RotateArray(data, 2)
 	fmt.Println(data)
 }
+
+//  Time Complexity
+// O(n)

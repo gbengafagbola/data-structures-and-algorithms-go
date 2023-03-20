@@ -17,3 +17,7 @@ func main() {
 	WaveArray(array)
 	fmt.Println("array", array)
 }
+
+
+//  Time Complexity
+// O(n)
