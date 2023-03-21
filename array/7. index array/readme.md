@@ -4,7 +4,7 @@ In this challenge, I was given an array of size n, containing elements from inde
 
 > Sample Input
 arr := []int{ 8, -1, 6, 1, 9, 3, 2, 7, 4, -1 } <br />
-size = len(arr) -1   --> 9
+size = len(arr)   --> 9
 
 > Sample Output
 
