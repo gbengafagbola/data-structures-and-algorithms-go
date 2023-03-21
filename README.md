@@ -6,7 +6,7 @@
 
 ## Folder Structure
 
-1. ### ARRAYS 
+1. ### arrays 
    - **Sum Array**: Summation of all element in an Array
    - **Sequential Search**: Search for element x in an un-ordered list
    - **Binary Search**: Search for element x in an ordered list
