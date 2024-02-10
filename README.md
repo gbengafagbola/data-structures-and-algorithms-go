@@ -16,7 +16,7 @@
    - **Index Array**: Sort the array from 0 to n-1, and if a value is not present in the array, then -1 is should take its place. 
    - **Sorting From 1 to n**: Sort the array from 1 to n, and if a value is not present in the array, then -1 is should take its place.  
 
-
+2. ### linked list
 
 
 
