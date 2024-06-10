@@ -1,11 +1,3 @@
-    
-    // loop through the array
-    // create a counter to store each character and keep count  
-    // check if character has a count (if so add 1) and return true
-    // else create count and proceed. 
-
-
-
 ### Challenge: Contains Duplicate
 
 > Problem
