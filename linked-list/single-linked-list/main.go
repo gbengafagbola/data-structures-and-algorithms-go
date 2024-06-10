@@ -3,7 +3,7 @@ package main
 // import "fmt"
 
 // defining a List of type structure with a field called head which points to a Node that is the first element in the List.
-// and tail a which points to a Node that is the last element in the List
+// and tail which points to a Node that is the last element in the List
 type List struct {
 	head *Node
 	tail *Node
@@ -13,7 +13,6 @@ type List struct {
 func (l *List) First() *Node {
 	return l.head;
 } 
-
 
 // the second method / func here push is to add an item to the List 
 func (l *List) Push(value int) {
@@ -31,15 +30,28 @@ func (l *List) Push(value int) {
 }
 
 
+func (l *List) Pop() *Node {
+	node := l.tail
+
+	l.tail = node.prev
+	return l.tail;
+
+}
+
 type Node struct {
 	value int
 	next *Node
+	prev *Node
 }
 // a method to return the next Node
 func (n *Node) Next() *Node{
 	return n.next
 }
 
+// a method to return the prev Node
+func (n *Node) Prev() *Node{
+	return n.next
+}
 
 
 func main() {
@@ -48,6 +60,10 @@ func main() {
 	l.Push(2)
 	l.Push(3)
 	l.Push(4)
+
+
+//	l2 := &List{};
+
 
 	n := l.First()
 	for {

@@ -1,5 +1,5 @@
 package main
-import ("fmt")
+import "fmt"
 
 func SequentialSearch(data []int, value int) bool { 
     for i := 0; i < len(data); i++ {

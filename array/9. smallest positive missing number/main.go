@@ -1,5 +1,4 @@
 package main
-
 import "fmt"
 
 func SmallestPositiveMissingNumber(arr []int, size int) int {

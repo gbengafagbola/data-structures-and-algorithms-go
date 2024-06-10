@@ -1,5 +1,5 @@
 package main
-import ("fmt")
+import "fmt"
 
 func SumArray(data []int) int { 
 	total := 0
