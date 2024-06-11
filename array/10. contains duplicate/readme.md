@@ -8,7 +8,7 @@ ___
 
 **My thought process towards solving this algorithm was**
 
-- create a counter to keep count of element occurence 
+- create a counter to keep count of each element occurence 
 - iterate over the array
 - check if the element is grater than 1 (hence occurence detected) then return true
 - at the end of the loop and no occurence return false
