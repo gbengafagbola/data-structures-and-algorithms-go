@@ -1,12 +1,12 @@
 ### Challenge: Contains Duplicate
 
 > Problem
-Given an integer array nums, return true if any value appears more than once in the array, otherwise return false.
+Given an array of integer (nums), return true if any value appears more than once in the array, otherwise return false.
 ___
 
 > Explanation
 
-**My thought process towards solving this algorithm was**
+**thought process**
 
 - create a counter to keep count of each element occurence 
 - iterate over the array
