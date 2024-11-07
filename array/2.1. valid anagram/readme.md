@@ -6,13 +6,21 @@ ___
 
 > Explanation
 
-**thought process**
+**intial thought process**
 
 - return false, if length of both string are not equal
-- create a counter to keep count of each element occurence in string S
-- iterate over the array
-- compare the generated slice of array with that of t
-- at the end of the loop and no occurence return false
+- create a map to count character occurrences
+- increment counts for string s
+- decrement counts for string t
+- check if all counts are zero
+
+
+**optimized thought process**
+- return false, if length of both string are not equal
+- Create a fixed-size array (26 elements for 'a' to 'z')
+- Loop through the first string and count occurrences of each character
+- Loop through the second string and decrement counts
+    - If any count goes negative, strings are not anagrams
 
 
 [source](https://leetcode.com/problems/valid-anagram/)
