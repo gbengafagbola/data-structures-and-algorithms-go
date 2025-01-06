@@ -21,9 +21,10 @@ Given an array of integers, return the k most frequent elements.
 - **Time Complexity**:  
 - -  Counting frequencies: O(n)
 - -  Sorting the slice O (n log n) where n is the number of unique elements
-- - Overall: O(n + nlogn)
+- - Overall: O(n + n log n)
 - -
-- **Space Complexity**: O(n), for the map and result.  
+- **Space Complexity**:
+- - Overall: O(n), for the map and result.  
 
 > **Summary**  
 - Sorting is straightforward but less efficient for larger strings due to the \(k \log k\) sorting step.  
