@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"strconv"
 	"strings"
@@ -56,6 +57,20 @@ func formatSliceWithQuotes(slice []string) string {
 	}
 	sb.WriteString("]")
 	return sb.String()
+}
+
+
+// Encode a list of strings to a single string
+func encodeJSON(strs []string) string {
+	encoded, _ := json.Marshal(strs)
+	return string(encoded)
+}
+
+// Decode a single string back to a list of strings
+func decodeJSON(encoded string) []string {
+	var result []string
+	json.Unmarshal([]byte(encoded), &result)
+	return result
 }
 
 func main() {
