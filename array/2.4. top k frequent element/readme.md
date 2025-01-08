@@ -31,5 +31,5 @@ Given an array of integers, return the k most frequent elements.
 - Frequency count avoids sorting and offers an optimal solution for grouping anagrams.  
 
 
-[source](https://neetcode.io/problems/top-k-elements-in-list/)
+[source](https://leetcode.com/problems/top-k-elements-in-list/)
 --- 
