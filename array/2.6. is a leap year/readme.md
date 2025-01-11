@@ -10,3 +10,6 @@ on every year that is evenly divisible by 4
 
 For example, 1997 is not a leap year, but 1996 is.  1900 is not a leap
 year, but 2000 is.
+
+
+https://platform.qa.com/lab-challenge/go-challenge-leap-years/
