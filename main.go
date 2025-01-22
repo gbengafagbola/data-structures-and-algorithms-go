@@ -1,27 +1,21 @@
 package main
 
-func isValidSudoku(board [][]byte) []string {	  
-	arr := []string{}
-	for i := 0; i <= len(board); i++ {
-		arr = append(arr, arr[i])
+func containDuplicate(arr []int) bool {
+	duplicateMap := make(map[int]int)
+	for i := 0; i < len(arr); i++ {
+		// if a key dosen't exist in a map we get the value type's zero
+		if duplicateMap[arr[i]] == 0 {
+			duplicateMap[arr[i]] = 1
+		} else {
+			return false
+		}
 	}
-    return arr
+	return true
 }
 
+func main() {
+	arr := []int{1, 2, 3, 4}
 
-func main(){
-	board := [][]byte{
-		{'5', '3', '.', '.', '7', '.', '.', '.', '.'},
-		{'6', '.', '.', '1', '9', '5', '.', '.', '.'},
-		{'.', '9', '8', '.', '.', '.', '.', '6', '.'},
-		{'8', '.', '.', '.', '6', '.', '.', '.', '3'},
-		{'4', '.', '.', '8', '.', '3', '.', '.', '1'},
-		{'7', '.', '.', '.', '2', '.', '.', '.', '6'},
-		{'.', '6', '.', '.', '.', '.', '2', '8', '.'},
-		{'.', '.', '.', '4', '1', '9', '.', '.', '5'},
-		{'.', '.', '.', '.', '8', '.', '.', '7', '9'},
-	}
-
-	result := isValidSudoku(board)
+	result := containDuplicate(arr)
 	println(result)
 }
