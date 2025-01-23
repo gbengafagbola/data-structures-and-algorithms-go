@@ -2,8 +2,10 @@ package main
 
 import "fmt"
 
+//best performance
 func containsDuplicate(data []int) bool {
 	counts := make(map[int]int)
+	
 	for _, i := range data {
 		counts[i]++
 		if counts[i] > 1 {
@@ -13,17 +15,18 @@ func containsDuplicate(data []int) bool {
 	return false
 }  
 
-func containsDuplicate2(arr []int) bool {
+// v.bad perfomance
+func containsDuplicate2(data []int) bool {
 	duplicateMap := make(map[int]int)
-	for i := 0; i < len(arr); i++ {
-		// if a key dosen't exist in a map we get the value type's zero
-		if duplicateMap[arr[i]] == 0 {
-			duplicateMap[arr[i]] = 1
+
+	for i := 0; i < len(data); i++ {
+		if duplicateMap[data[i]] == 0 {
+			duplicateMap[data[i]] = 1
 		} else {
-			return false
+			return true
 		}
 	}
-	return true
+	return false
 }
 
 func main() {
