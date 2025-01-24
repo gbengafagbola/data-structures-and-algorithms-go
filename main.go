@@ -1,29 +1,68 @@
-// package main
+package main
 
-// import "fmt"
+import "fmt"
 
-// func validAnagrams(s,t string) bool {
-// 	a := make(map[rune]int)
+type List struct {
+	head   *Node
+	tail   *Node
+	length int
+}
 
-// 	for _, i := range s {
-// 		 a[i]++
-// 	}
+func (l *List) First() *Node {
+	return l.head
+}
 
-// 	for _,i := range t {
-// 		a[i]++
-//    }
+func (l *List) Last() *Node {
+	return l.tail
+}
 
-//    for _, v := range a {
-// 		if (v % 2 != 0) {
-// 			return false
-// 		}
-//    }
+func (l *List) Push(value int) {
+	node := &Node{value: value}
 
-// 	return true
-// }
+	if l.head == nil {
+		l.head = node
+	} else {
+		l.tail.next = node
+		node.prev = l.tail
+	}
+	l.tail = node
+	l.length = +1
+}
 
-// func main() {
-// 	s := "racecar"
-// 	t := "carrace"
-// 	fmt.Println("the array returns:", validAnagrams(s, t))
-// }
+func (l *List) Pop() {
+	l.tail = l.tail.prev
+	l.tail.next = nil
+}
+
+type Node struct {
+	value int
+	next  *Node
+	prev  *Node
+}
+
+// a method to return the next Node
+func (n *Node) Next() *Node {
+	return n.next
+}
+
+// a method to return the next Node
+func (n *Node) Prev() *Node {
+	return n.prev
+}
+
+func main() {
+	l := &List{}
+	l.Push(1)
+	l.Push(2)
+	l.Push(3)
+	l.Push(4)
+
+	l.Pop()
+
+	node := l.First()
+	for node != nil {
+		fmt.Println(node.value)
+		node = node.Next()
+	}
+
+}
