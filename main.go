@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type List struct {
 	head   *Node
@@ -34,6 +36,19 @@ func (l *List) Pop() {
 	l.tail.next = nil
 }
 
+func (l *List) Find(value int) (*Node) {
+	node := l.First()
+
+	for node.next != nil {
+		if (node.value == value) {
+			return node
+		}
+		node = node.next
+	}
+
+	return &Node{value: 0}
+}
+
 type Node struct {
 	value int
 	next  *Node
@@ -64,5 +79,6 @@ func main() {
 		fmt.Println(node.value)
 		node = node.Next()
 	}
-
+	
+	fmt.Println(l.Find(2).value)
 }
