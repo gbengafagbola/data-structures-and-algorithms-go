@@ -1,37 +1,37 @@
 package main
+
 import "fmt"
 
-type Stack struct {
-	items []string
+type Queue struct {
+	items []int
 }
 
-func (s *Stack) Push(item string){
-	s.items = append(s.items, item)	
+func (q *Queue) Enqueue(val int) {
+	q.items = append(q.items, val)
 }
 
-
-func (s *Stack) Pop() string{
-	item, items := s.items[len(s.items)-1], s.items[:len(s.items)-1]
-	s.items = items
+func (q *Queue) Dequeue() int {
+	if len(q.items) == 0 {
+		return -1
+	}
+	item, items := q.items[0], q.items[1:]
+	q.items = items
 	return item
 }
 
-func main(){
- s := Stack{}
+func main() {
+	q := Queue{}
 
- s.Push("a")
- s.Push("e")
- s.Push("i")
- s.Push("o")
- s.Push("u")
+	q.Enqueue(1)
+	q.Enqueue(3)
+	q.Enqueue(5)
+	q.Enqueue(7)
 
-
- fmt.Println(s.items)
- fmt.Println("pop it all")
-
- fmt.Println(s.Pop())
- fmt.Println(s.Pop())
- fmt.Println(s.Pop())
- fmt.Println(s.Pop())
- fmt.Println(s.Pop())
+	// fmt.Println("deque:")
+	fmt.Println(q.items)
+ 
+	fmt.Println(q.Dequeue())
+	fmt.Println(q.Dequeue())
+	fmt.Println(q.Dequeue())
+	fmt.Println(q.Dequeue())
 }
