@@ -2,7 +2,6 @@ package main;
 
 // method push and pop
 
-
 type Stack struct {
 	items []int
 	// length int
@@ -38,7 +37,4 @@ func main(){
 	println(stack.Pop())
 	println(stack.Pop())
 	println(stack.Pop())
-	
-
-
 }
