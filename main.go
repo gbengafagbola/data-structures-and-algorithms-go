@@ -3,24 +3,24 @@ package main
 import "fmt"
 
 type Queue struct {
-	items []int
+	items chan int
 }
 
-func (q *Queue) Enqueue(val int) {
-	q.items = append(q.items, val)
+func (q *Queue) Enqueue(item int) {
+	q.items <- item
 }
 
 func (q *Queue) Dequeue() int {
-	if len(q.items) == 0 {
-		return -1
-	}
-	item, items := q.items[0], q.items[1:]
-	q.items = items
-	return item
+		if len(q.items) == 0 {
+			return -1
+		}
+		return <- q.items
 }
 
 func main() {
-	q := Queue{}
+	q := Queue{
+		items: make(chan int, 100),
+	}
 
 	q.Enqueue(1)
 	q.Enqueue(3)
@@ -28,10 +28,10 @@ func main() {
 	q.Enqueue(7)
 
 	// fmt.Println("deque:")
-	fmt.Println(q.items)
+	fmt.Println(q.Dequeue())
+	fmt.Println(q.Dequeue())
+	fmt.Println(q.Dequeue())
+	fmt.Println(q.Dequeue())
+	fmt.Println(q.Dequeue())
  
-	fmt.Println(q.Dequeue())
-	fmt.Println(q.Dequeue())
-	fmt.Println(q.Dequeue())
-	fmt.Println(q.Dequeue())
 }
