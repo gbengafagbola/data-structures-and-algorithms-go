@@ -1,37 +1,77 @@
 package main
 
-import "fmt"
-
-type Queue struct {
-	items chan int
+type Node struct {
+	value int
+	left  *Node
+	right *Node
 }
 
-func (q *Queue) Enqueue(item int) {
-	q.items <- item
+type Tree struct {
+	node *Node
 }
 
-func (q *Queue) Dequeue() int {
-		if len(q.items) == 0 {
-			return -1
+func (t *Tree) treeInsert(value int) *Tree {
+	if t.node == nil {
+		t.node = &Node{value: value}
+	} else {
+		t.node.nodeInsert(value)
+	}
+	return t
+}
+
+func (n *Node) nodeInsert(value int) {
+	if value <= n.value {
+		if n.left == nil {
+			n.left = &Node{value: value}
+		} else {
+			n.left.nodeInsert(value)
 		}
-		return <- q.items
+	} else {
+		if n.right == nil {
+			n.right = &Node{value: value}
+		} else {
+			n.right.nodeInsert(value)
+		}
+	}
+}
+
+func (n *Node) exists(value int) bool {
+	if n == nil {
+		return false
+	}
+	if n.value == value {
+		return true
+	}
+
+	println(n.value)
+
+	if value <= n.value {
+		return n.left.exists(value)
+	} else {
+		return n.right.exists(value)
+	}
+}
+
+func printNode(n *Node) {
+	if n == nil {
+		return
+	}
+
+	println(n.value)
+	printNode(n.left)
+	printNode(n.right)
 }
 
 func main() {
-	q := Queue{
-		items: make(chan int, 100),
-	}
+	t := &Tree{}
+	t.treeInsert(10).
+		treeInsert(8).
+		treeInsert(20).
+		treeInsert(9).
+		treeInsert(0).
+		treeInsert(15).
+		treeInsert(25)
+	// printNode(t.node)
 
-	q.Enqueue(1)
-	q.Enqueue(3)
-	q.Enqueue(5)
-	q.Enqueue(7)
-
-	// fmt.Println("deque:")
-	fmt.Println(q.Dequeue())
-	fmt.Println(q.Dequeue())
-	fmt.Println(q.Dequeue())
-	fmt.Println(q.Dequeue())
-	fmt.Println(q.Dequeue())
- 
+	println(t.node.exists(25))
 }
