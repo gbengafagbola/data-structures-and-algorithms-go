@@ -1,77 +1,50 @@
 package main
 
-type Node struct {
-	value int
-	left  *Node
-	right *Node
-}
+import "fmt"
 
 type Tree struct {
-	node *Node
+	nodes []int
 }
 
-func (t *Tree) treeInsert(value int) *Tree {
-	if t.node == nil {
-		t.node = &Node{value: value}
-	} else {
-		t.node.nodeInsert(value)
-	}
-	return t
+// Insert a value into the tree.
+func (t *Tree) Insert(value int) {
+	t.nodes = append(t.nodes, value)
 }
 
-func (n *Node) nodeInsert(value int) {
-	if value <= n.value {
-		if n.left == nil {
-			n.left = &Node{value: value}
-		} else {
-			n.left.nodeInsert(value)
-		}
-	} else {
-		if n.right == nil {
-			n.right = &Node{value: value}
-		} else {
-			n.right.nodeInsert(value)
+// Check if a value exists in the tree.
+func (t *Tree) Exists(value int) bool {
+	for _, v := range t.nodes {
+		if v == value {
+			return true
 		}
 	}
+	return false
 }
 
-func (n *Node) exists(value int) bool {
-	if n == nil {
-		return false
+// Print the tree (level-order traversal).
+func (t *Tree) PrintTree() {
+	for i, v := range t.nodes {
+		fmt.Printf("Index %d: Value %d\n", i, v)
 	}
-	if n.value == value {
-		return true
-	}
-
-	println(n.value)
-
-	if value <= n.value {
-		return n.left.exists(value)
-	} else {
-		return n.right.exists(value)
-	}
-}
-
-func printNode(n *Node) {
-	if n == nil {
-		return
-	}
-
-	println(n.value)
-	printNode(n.left)
-	printNode(n.right)
 }
 
 func main() {
 	t := &Tree{}
-	t.treeInsert(10).
-		treeInsert(8).
-		treeInsert(20).
-		treeInsert(9).
-		treeInsert(0).
-		treeInsert(15).
-		treeInsert(25)
-	// printNode(t.node)
 
-	println(t.node.exists(25))
+	// Insert values into the tree.
+	t.Insert(10) // Root
+	t.Insert(8)  // Left child of root
+	t.Insert(20) // Right child of root
+	t.Insert(9)  // Left child of node at index 1
+	t.Insert(0)  // Right child of node at index 1
+	t.Insert(15) // Left child of node at index 2
+	t.Insert(25) // Right child of node at index 2
+
+	// Print the tree.
+	fmt.Println("Tree structure:")
+	t.PrintTree()
+
+	// Check if values exist in the tree.
+	fmt.Println("\nValue 25 exists:", t.Exists(25)) // true
+	fmt.Println("Value 30 exists:", t.Exists(30))   // false
 }
