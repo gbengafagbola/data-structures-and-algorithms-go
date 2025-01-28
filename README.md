@@ -1,24 +1,111 @@
-## Data Structures & Algorithm in GO :sparkles:
+# Codebase Structure
 
-
-
-> **About:** My Path/Process in mastery of DSA in go, and sharing my solutions/approach.
-
-## Folder Structure
-
-1. ### arrays 
-   - **Sum Array**: Summation of all element in an Array
-   - **Sequential Search**: Search for element x in an un-ordered list
-   - **Binary Search**: Search for element x in an ordered list
-   - **Largest Sum in Sub-Array**: Search for largest summation in a sub array
-   - **Rotate an Array to K position**: Rotate an Array in K specified position i.e (1, 2, 3, ...)
-   - **Array Waveform**: Transform an array such that neigbouring characters surronding the odd indicies are greater than or equals it.
-   - **Index Array**: Sort the array from 0 to n-1, and if a value is not present in the array, then -1 is should take its place. 
-   - **Sorting From 1 to n**: Sort the array from 1 to n, and if a value is not present in the array, then -1 is should take its place.  
-
-2. ### linked list
-
-
-
-##### resources used
-1. Data Structures & Algorithms In Go. [source](https://www.educative.io/courses/data-structures-and-algorithms-go)
+```
+📂 .
+│   📂 .github
+│       📂 workflows
+│           📄 generate-tree.yml
+│   📄 .gitignore
+│   📂 1.0. array
+│   │   📂 1.0. sum array
+│   │   │   📄 main.go
+│   │       📄 readme.md
+│   │   📂 1.1. sequential search
+│   │   │   📄 main.go
+│   │       📄 readme.md
+│   │   📂 1.2. binary search
+│   │   │   📄 main.go
+│   │       📄 readme.md
+│   │   📂 1.3. finding the largest sum subarray
+│   │   │   📄 main.go
+│   │       📄 readme.md
+│   │   📂 1.4. rotate an array by k position
+│   │   │   📄 main.go
+│   │       📄 readme.md
+│   │   📂 1.5. array waveform
+│   │   │   📄 main.go
+│   │       📄 readme.md
+│   │   📂 1.6. index array
+│   │   │   📄 main.go
+│   │       📄 readme.md
+│   │   📂 1.7. sorting from 1 to n
+│   │   │   📄 main.go
+│   │       📄 readme.md
+│   │   📂 1.8. smallest positive missing number
+│   │       📄 main.go
+│   │   📂 1.9. contains duplicate
+│   │   │   📄 main.go
+│   │       📄 readme.md
+│   │   📂 2.0. random
+│   │       📄 main.go
+│   │   📂 2.1. valid anagram
+│   │   │   📄 main.go
+│   │       📄 readme.md
+│   │   📂 2.2. two sum
+│   │   │   📄 main.go
+│   │       📄 readme.md
+│   │   📂 2.3. group anagrams
+│   │   │   📄 main.go
+│   │       📄 readme.md
+│   │   📂 2.4. top k frequent element
+│   │   │   📄 main.go
+│   │       📄 readme.md
+│   │   📂 2.5. encode and decode strings
+│   │   │   📄 main.go
+│   │       📄 readme.md
+│   │   📂 2.6. is a leap year
+│   │   │   📄 main.go
+│   │       📄 readme.md
+│   │   📂 2.7. Isogram
+│   │   │   📄 main.go
+│   │       📄 readme.md
+│   │   📂 2.8. scrabble
+│   │   │   📄 main.go
+│   │       📄 readme.md
+│   │   📂 2.9. trinary
+│   │   │   📄 main.go
+│   │       📄 readme.md
+│   │   📂 3.0. encode length
+│   │   │   📄 main.go
+│   │       📄 readme.md
+│   │   📂 3.1. product except self
+│   │       📄 main.go
+│       📂 3.2. valid sudoku 
+│           📄 main.go
+│   📂 1.1. linked-list
+│   │   📄 README.md
+│   │   📂 doubly-linked-list
+│   │   │   📂 1.0. create a vowel double linked list
+│   │   │       📄 main.go
+│   │       📄 main.go
+│       📂 single-linked-list
+│       │   📂 1.0. create a vowel linked list
+│       │       📄 main.go
+│           📄 main.go
+│   📂 1.2. stacks
+│   │   📂 1.0. vowel implementation of stack
+│   │       📄 main.go
+│       📄 main.go
+│   📂 1.3. queue
+│   │   📂 1.0. implement queue with channel
+│   │       📄 main.go
+│       📄 main.go
+│   📂 1.4. binary tree
+│   │   📂 array implementation of binary tree
+│   │       📄 main.go
+│       📄 main.go
+│   📂 1.5. concurrency
+│   │   📂 1.0. channel example
+│   │       📄 main.go
+│   │   📂 1.1. fan-in
+│   │       📄 main.go
+│   │   📂 1.2. fan-out
+│   │       📄 main.go
+│       📂 1.3. worker pool
+│           📄 main.go
+│   📄 README.md
+│   📂 generate
+│       📄 generate.go
+│   📄 go.mod
+    📄 main.go
+```
