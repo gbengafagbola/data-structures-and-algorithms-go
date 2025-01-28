@@ -1,50 +1,63 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+	"time"
+)
 
-type Tree struct {
-	nodes []int
+// sleep function
+func sleep(){
+	time.Sleep(
+		time.Duration(rand.Intn(3000)) *  time.Millisecond,
+	)
 }
 
-// Insert a value into the tree.
-func (t *Tree) Insert(value int) {
-	t.nodes = append(t.nodes, value)
+// producer: which write message to a channel
+// write only 
+func producer(ch chan <- int, name string) {
+	for {
+		// sleep for some random time
+		sleep()
+		// generate a random number
+		n := rand.Intn(100)
+
+		//send the message 
+		fmt.Printf("Channel %s -> %d\n", name, n)
+
+	}
 }
 
-// Check if a value exists in the tree.
-func (t *Tree) Exists(value int) bool {
-	for _, v := range t.nodes {
-		if v == value {
-			return true
+// consumer: read the message
+// read only
+func consumer(ch <- chan int){
+	for n := range ch {
+		fmt.Printf("<- %d\n", n)
+	}
+}
+
+// basically this will read from channel A & B and write their content into channel C
+func fanIn(chA, chB <- chan int, chC chan <- int){
+	var n int 
+	for {
+		select {
+		case n = <- chA:
+			chC <- n
+		case n = <- chB:
+			chC <- n
 		}
 	}
-	return false
 }
 
-// Print the tree (level-order traversal).
-func (t *Tree) PrintTree() {
-	for i, v := range t.nodes {
-		fmt.Printf("Index %d: Value %d\n", i, v)
-	}
-}
 
-func main() {
-	t := &Tree{}
+func main (){
+	chA := make(chan int)
+	chB := make(chan int)
+	chC := make(chan int)
 
-	// Insert values into the tree.
-	t.Insert(10) // Root
-	t.Insert(8)  // Left child of root
-	t.Insert(20) // Right child of root
-	t.Insert(9)  // Left child of node at index 1
-	t.Insert(0)  // Right child of node at index 1
-	t.Insert(15) // Left child of node at index 2
-	t.Insert(25) // Right child of node at index 2
+	go producer(chA, "A")
+	go producer(chB, "B")
+	go consumer(chC)
 
-	// Print the tree.
-	fmt.Println("Tree structure:")
-	t.PrintTree()
-
-	// Check if values exist in the tree.
-	fmt.Println("\nValue 25 exists:", t.Exists(25)) // true
-	fmt.Println("Value 30 exists:", t.Exists(30))   // false
+	fanIn(chA, chB, chC)
 }
