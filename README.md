@@ -73,13 +73,13 @@
 │       📂 3.2. valid sudoku 
 │           📄 main.go
 │   📂 1.1. linked-list
+│   │   📄 README.md
 │   │   📂 doubly-linked-list
 │   │   │   📂 1.0. create a vowel double linked list
 │   │   │   │   📄 main.go
 │   │   │       📄 readme.md
 │   │   │   📄 main.go
 │   │       📄 readme.md
-│   │   📄 readme.md
 │       📂 single-linked-list
 │       │   📂 1.0. create a vowel linked list
 │       │   │   📄 main.go
