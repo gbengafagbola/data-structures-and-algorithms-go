@@ -11,4 +11,3 @@ func main() {
 		log.Fatalf("Error: %v", err)  // Log the error and exit
 	}
 }
-
