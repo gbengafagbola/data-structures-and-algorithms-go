@@ -35,14 +35,12 @@ jobs:
       - name: Debug - List files before commit
         run: ls -R
       
+      # Step 6: Commit and push changes (force-add new files)
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          
-          # Force add all files
-          git add --all
-          
+          git add --force *  # Force add all files including ignored ones
           if [ "$(git status --porcelain)" ]; then
             git commit -m "Update codebase tree structure [skip ci]"
             git push
