@@ -29,7 +29,7 @@ jobs:
 
       # Step 4: Run the Go script
       - name: Run generate_tree script
-        run: go run ./generate/generate.go
+        run: go run main.go
 
       # Step 5: Commit and push changes (if README.md was updated)
       - name: Commit and push changes
