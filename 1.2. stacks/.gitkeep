@@ -1,0 +1,4 @@
+find . -type d -empty -exec touch {}/.gitkeep \;
+git add .
+git commit -m "Add missing directories"
+git push origin main
