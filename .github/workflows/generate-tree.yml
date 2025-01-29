@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Check out the code
+      # Step 1: Checkout the code
       - name: Checkout code
         uses: actions/checkout@v3
 
@@ -24,11 +24,11 @@ jobs:
           go-version: "1.23"
 
       # Step 3: Install dependencies (if any)
-      # - name: Install dependencies
-        # run: go mod tidy
+      - name: Install dependencies
+        run: go mod tidy
 
       # Step 4: Run the Go script
-      - name: Run generate tree script for code-base
+      - name: Run generate tree script for codebase
         run: go run main.go
 
       # Step 5: Commit and push changes (if README.md was updated)
