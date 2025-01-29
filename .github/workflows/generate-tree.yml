@@ -23,7 +23,7 @@ jobs:
         with:
           go-version: "1.23"
 
-      # Step 3: Install dependencies (if any)
+      # Step 3: Install dependencies
       - name: Install dependencies
         run: go mod tidy
 
@@ -31,13 +31,19 @@ jobs:
       - name: Run generate tree script for codebase
         run: go run main.go
 
-      # Step 5: Commit and push changes (if README.md was updated)
+      # Step 5: Verify generated file structure
+      - name: Debug - List files before commit
+        run: ls -R
+      
+      # Step 6: Commit and push changes (track new files explicitly)
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A  # Ensure all new files and changes are staged
           if [ "$(git status --porcelain)" ]; then
-            git add README.md
             git commit -m "Update codebase tree structure [skip ci]"
             git push
+          else
+            echo "No changes detected, skipping commit."
           fi
