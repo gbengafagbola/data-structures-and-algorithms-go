@@ -28,7 +28,7 @@ jobs:
         # run: go mod tidy
 
       # Step 4: Run the Go script
-      - name: Run generate_tree script
+      - name: Run generate tree script for code-base
         run: go run main.go
 
       # Step 5: Commit and push changes (if README.md was updated)
