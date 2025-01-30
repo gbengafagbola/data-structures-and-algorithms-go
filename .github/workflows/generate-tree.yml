@@ -24,8 +24,8 @@ jobs:
           go-version: "1.23"
 
       # Step 3: Install dependencies
-      - name: Install dependencies
-        run: go mod tidy
+      # - name: Install dependencies
+      #   run: go mod tidy
 
       # Step 4: Run the Go script
       - name: Run generate tree script for codebase
