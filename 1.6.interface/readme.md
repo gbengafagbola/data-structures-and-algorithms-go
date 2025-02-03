@@ -97,12 +97,3 @@ To run the code, simply execute:
 ```sh
 go run main.go
 ```
-
----
-
-🚀 **Now you understand how interfaces work in Go using a practical example!** Let me know if you have any questions. 😊
-```
-
----
-
-This `README.md` is **clean, structured, and informative**, making it easy for any developer to understand the interface concept with the given example. Let me know if you need modifications! 🚀
