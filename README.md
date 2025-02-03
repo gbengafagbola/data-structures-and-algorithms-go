@@ -84,16 +84,39 @@
 │       📂 1.4.distributed-search-engine
 │           📄 main.go
 │   📂 1.6.interface
-│       📄 main.go
-│   📂 1.7.testing
 │   │   📄 main.go
+│       📄 readme.md
+│   📂 1.7.struct
+│       📄 readme.md
+│   📂 1.8.testing
 │       📄 test_main.go
-│   📂 1.8.design-patterns
+│   📂 1.9.design-patterns
 │       📂 1.0.creational
-│           📂 1.0.singleton
+│       │   📂 1.0.singleton
+│       │   │   📄 readme.md
+│       │   │   📄 singleton.go
+│       │       📄 singleton_test.go
+│       │   📂 2.0.builder
+│       │   │   📄 builder.go
+│       │   │   📄 readme.md
+│       │       📄 test_builder.go
+│       │   📂 3.0.factory
+│       │   │   📄 factory.go
+│       │   │   📄 factory_test.go
+│       │       📄 readme.md
+│           📂 4.0.abstract-factory
+│           │   📄 car-factory.go
+│           │   📄 car.go
+│           │   📄 cruise-motorbike.go
+│           │   📄 family-car.go
+│           │   📄 luxury-car.go
+│           │   📄 motorbike-factory.go
+│           │   📄 motorbike.go
 │           │   📄 readme.md
-│           │   📄 singleton.go
-│               📄 singleton_test.go
+│           │   📄 sport-motorbike.go
+│           │   📄 vechicle-factory_test.go
+│           │   📄 vehicle-factory.go
+│               📄 vehicle.go
 │   📄 README.md
 │   📂 generate
 │       📄 generate.go
