@@ -1,4 +1,4 @@
-package singleton
+package creational
 
 // singleton struct represents a shared instance that maintains a count.
 // This struct should have only one instance throughout the application's lifecycle.
