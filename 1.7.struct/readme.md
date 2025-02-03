@@ -68,9 +68,3 @@ func main() {
 ✅ **Interfaces define behavior**, while **structs define data and state**.  
 ✅ A struct **implicitly implements** an interface if it defines the required methods.  
 ✅ Interfaces allow **polymorphism**, enabling functions to accept different types that share common behavior.  
-
-Would you like more real-world examples? 🚀  
-
----
-
-This README file provides a **clear and structured** explanation of **interfaces vs. structs** with examples. Let me know if you need any modifications! 😊
