@@ -1,7 +1,7 @@
 ### Challenge: Two Sum Problem
 
 > Problem
-iven an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
 
@@ -22,6 +22,27 @@ You can return the answer in any order.
 - - Check if the complement is already in the hash map.
 - - If found, return the indices of the complement and the current number.
 - - If not found, add the current number and its index to the hash map.
+
+
+```
+func twoSum(nums []int, target int) []int {
+	// Map to store numbers and their indices
+	numMap := make(map[int]int)
+
+	// Iterate through the array
+	for i, num := range nums {
+		complement := target - num // Calculate the complement needed for the target
+		// Check if the complement exists in the map
+		if index, exists := numMap[complement]; exists {
+			return []int{index, i} // Return the indices of the pair
+		}
+		// Add the current number and its index to the map
+		numMap[num] = i
+	}
+
+	return nil // Return nil if no valid pair is found
+}
+```
 
 **Time Complexity**
 O(n): Single pass through the array with constant-time hash map operations.
