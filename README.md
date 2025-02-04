@@ -91,32 +91,55 @@
 │   📂 1.8.testing
 │       📄 test_main.go
 │   📂 1.9.design-patterns
-│       📂 1.0.creational
-│       │   📂 1.0.singleton
-│       │   │   📄 readme.md
-│       │   │   📄 singleton.go
-│       │       📄 singleton_test.go
-│       │   📂 2.0.builder
-│       │   │   📄 builder.go
-│       │   │   📄 readme.md
-│       │       📄 test_builder.go
-│       │   📂 3.0.factory
-│       │   │   📄 factory.go
-│       │   │   📄 factory_test.go
+│   │   📂 1.0.creational
+│   │   │   📂 1.0.singleton
+│   │   │   │   📄 readme.md
+│   │   │   │   📄 singleton.go
+│   │   │       📄 singleton_test.go
+│   │   │   📂 2.0.builder
+│   │   │   │   📄 builder.go
+│   │   │   │   📄 readme.md
+│   │   │       📄 test_builder.go
+│   │   │   📂 3.0.factory
+│   │   │   │   📄 factory.go
+│   │   │   │   📄 factory_test.go
+│   │   │       📄 readme.md
+│   │   │   📂 4.0.abstract-factory
+│   │   │   │   📄 car-factory.go
+│   │   │   │   📄 car.go
+│   │   │   │   📄 cruise-motorbike.go
+│   │   │   │   📄 family-car.go
+│   │   │   │   📄 luxury-car.go
+│   │   │   │   📄 motorbike-factory.go
+│   │   │   │   📄 motorbike.go
+│   │   │   │   📄 readme.md
+│   │   │   │   📄 sport-motorbike.go
+│   │   │   │   📄 vechicle-factory_test.go
+│   │   │   │   📄 vehicle-factory.go
+│   │   │       📄 vehicle.go
+│   │   │   📂 5.0.prototype
+│   │   │   │   📄 prototype.go
+│   │   │   │   📄 prototype_test.go
+│   │   │       📄 readme.md
+│   │       📄 readme.md
+│       📂 2.0.structural
+│       │   📂 1.0.composition
+│       │   │   📂 1.0.composition
+│       │   │   │   📄 composition.go
+│       │   │   │   📄 composition_test.go
+│       │   │       📄 readme.md
+│       │       📂 1.1.binary-tree-composition
+│       │       │   📄 binary-tree.go
+│       │       │   📄 binary-tree_test.go
+│       │           📄 readme.md
+│       │   📂 2.0.adapter
+│       │   │   📄 adapter.go
+│       │   │   📄 adapter_test.go
 │       │       📄 readme.md
-│           📂 4.0.abstract-factory
-│           │   📄 car-factory.go
-│           │   📄 car.go
-│           │   📄 cruise-motorbike.go
-│           │   📄 family-car.go
-│           │   📄 luxury-car.go
-│           │   📄 motorbike-factory.go
-│           │   📄 motorbike.go
-│           │   📄 readme.md
-│           │   📄 sport-motorbike.go
-│           │   📄 vechicle-factory_test.go
-│           │   📄 vehicle-factory.go
-│               📄 vehicle.go
+│           📂 3.0.bridge
+│           │   📄 bridge.go
+│           │   📄 bridge_test.go
+│               📄 readme.md
 │   📄 README.md
 │   📂 generate
 │       📄 generate.go
