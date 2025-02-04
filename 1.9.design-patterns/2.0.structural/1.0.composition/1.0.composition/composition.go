@@ -1,4 +1,4 @@
-package composition
+package structural
 
 // Athlete struct with a Train method
 type Athlete struct{}
