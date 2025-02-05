@@ -1,5 +1,74 @@
 ### Challenge: Group Anagrams
 
+## Overview
+This Go function efficiently groups anagrams from a list of strings using a frequency-based hashing technique.
+
+## Code Implementation
+```go
+func groupAnagrams(strs []string) [][]string {
+    res := make(map[[26]int][]string)
+
+    for _, s := range strs {
+        var count [26]int
+        for _, c := range s {
+            count[c-'a']++
+        }
+        res[count] = append(res[count], s)
+    }
+
+    var result [][]string
+    for _, group := range res {
+        result = append(result, group)
+    }
+    return result
+}
+```
+
+## How It Works
+
+### Input
+A list of strings:
+```go
+strs := []string{"eat", "tea", "tan", "ate", "nat", "bat"}
+```
+
+### Step-by-Step Execution
+1. **Initialize a map** (`res`) to store anagrams using a 26-length array as a key.
+2. **Iterate through each word**, convert it into a character frequency array.
+3. **Group words by their frequency key**.
+4. **Return the grouped anagrams**.
+
+### Example Execution
+| Word  | Letter Frequency Key  | Group in `res`  |
+|--------|-----------------------------|-------------------|
+| "eat"  | `[1,0,0,0,1,0,0,0,0,0,0,0,1,...]`  | `["eat"]`  |
+| "tea"  | Same as "eat"  | `["eat", "tea"]`  |
+| "tan"  | `[0,0,0,0,0,0,0,0,0,0,0,0,1,1,...]`  | `["tan"]`  |
+| "ate"  | Same as "eat"  | `["eat", "tea", "ate"]`  |
+| "nat"  | Same as "tan"  | `["tan", "nat"]`  |
+| "bat"  | `[1,1,0,0,0,0,0,0,0,0,0,0,0,...]`  | `["bat"]`  |
+
+### Final Output
+```go
+[["eat", "tea", "ate"], ["tan", "nat"], ["bat"]]
+```
+
+## Complexity Analysis
+- **Time Complexity:** O(N * K), where N is the number of words and K is the maximum length of a word.
+- **Space Complexity:** O(N * K) for storing groups in a map.
+
+## Usage
+You can use this function in Go projects that involve text processing, such as:
+- Grouping words in dictionary applications
+- Identifying anagram relationships in natural language processing
+- Categorizing words based on character composition
+
+## Contributions
+Feel free to fork and enhance the implementation! 🚀
+
+// extra
+
+
 **Problem**  
 Given an array of strings, group the strings that are anagrams of each other.  
 An anagram is a word or phrase formed by rearranging the letters of another, using all the original letters exactly once.
@@ -53,3 +122,5 @@ An anagram is a word or phrase formed by rearranging the letters of another, usi
 
 
 [source](https://leetcode.com/problems/group-anagrams/)
+
+
