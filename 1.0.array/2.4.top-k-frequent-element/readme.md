@@ -1,8 +1,4 @@
-Here’s an improved version of your README with better formatting, fixed inconsistencies, and clearer explanations:  
-
----
-
-# **Challenge: Top K Frequent Elements**
+## **Challenge: Top K Frequent Elements**
 
 ## **Problem**  
 Given an array of integers, return the `k` most frequent elements.
