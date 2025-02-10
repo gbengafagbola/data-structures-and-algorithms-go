@@ -43,7 +43,10 @@
 │   │       📄 readme.md
 │   │   📂 2.9.trinary
 │   │       📄 readme.md
-│       📂 3.0.encode-length
+│   │   📂 3.0.encode-length
+│   │       📄 readme.md
+│       📂 3.3.max-area
+│       │   📄 mainq.go
 │           📄 readme.md
 │   📂 1.1.linked-list
 │   │   📂 doubly-linked-list
