@@ -46,7 +46,6 @@
 │   │   📂 3.0.encode-length
 │   │       📄 readme.md
 │       📂 3.3.max-area
-│       │   📄 mainq.go
 │           📄 readme.md
 │   📂 1.1.linked-list
 │   │   📂 doubly-linked-list
