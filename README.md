@@ -79,7 +79,8 @@
 │   │   │   📄 readme.md
 │   │       📄 valid-mountain.go
 │       📂 3.5.boats-required
-│           📄 boats-required.go
+│       │   📄 boats-required.go
+│           📄 readme.md
 │   📂 1.1.linked-list
 │   │   📂 doubly-linked-list
 │   │   │   📂 1.0.create-a-vowel-double-linked-list
