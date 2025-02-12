@@ -82,7 +82,8 @@
 │   │   │   📄 boats-required.go
 │   │       📄 readme.md
 │       📂 3.6.move-zeroes
-│           📄 move-zeroes.go
+│       │   📄 move-zeroes.go
+│           📄 readme.md
 │   📂 1.1.linked-list
 │   │   📂 doubly-linked-list
 │   │   │   📂 1.0.create-a-vowel-double-linked-list
