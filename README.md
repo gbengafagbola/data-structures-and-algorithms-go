@@ -75,9 +75,11 @@
 │   │   📂 3.3.max-area
 │   │   │   📄 max-area.go
 │   │       📄 readme.md
-│       📂 3.4.valid-mountian-array
-│       │   📄 readme.md
-│           📄 valid-mountain.go
+│   │   📂 3.4.valid-mountian-array
+│   │   │   📄 readme.md
+│   │       📄 valid-mountain.go
+│       📂 3.5.boats-required
+│           📄 boats-required.go
 │   📂 1.1.linked-list
 │   │   📂 doubly-linked-list
 │   │   │   📂 1.0.create-a-vowel-double-linked-list
