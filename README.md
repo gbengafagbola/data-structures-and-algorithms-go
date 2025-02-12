@@ -48,7 +48,7 @@
 │   │   📂 3.3.max-area
 │   │       📄 readme.md
 │       📂 3.4.valid-mountian-array
-│           📄 mountain.go
+│           📄 readme.md
 │   📂 1.1.linked-list
 │   │   📂 doubly-linked-list
 │   │   │   📂 1.0.create-a-vowel-double-linked-list
