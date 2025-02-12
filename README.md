@@ -8,22 +8,33 @@
 │   📄 .gitignore
 │   📂 1.0.array
 │   │   📂 1.0.sum-array
-│   │       📄 readme.md
+│   │   │   📄 readme.md
+│   │       📄 sum-array.go
 │   │   📂 1.1.sequential-search
-│   │       📄 readme.md
+│   │   │   📄 readme.md
+│   │       📄 sequential-search.go
 │   │   📂 1.2.binary-search
+│   │   │   📄 binary-search.go
 │   │       📄 readme.md
 │   │   📂 1.3.finding-the-largest-sum-subarray
+│   │   │   📄 largest-sum.go
 │   │       📄 readme.md
 │   │   📂 1.4.rotate-an-array-by-k-position
-│   │       📄 readme.md
+│   │   │   📄 readme.md
+│   │       📄 rotate-k.go
 │   │   📂 1.5.array-waveform
+│   │   │   📄 array-waveform.go
 │   │       📄 readme.md
 │   │   📂 1.6.index-array
+│   │   │   📄 index-array.go
 │   │       📄 readme.md
 │   │   📂 1.7.sorting-from-1-to-n
-│   │       📄 readme.md
+│   │   │   📄 readme.md
+│   │       📄 sort.go
+│   │   📂 1.8.smallest-positive-missing-number
+│   │       📄 missing-number.go
 │   │   📂 1.9.contains-duplicate
+│   │   │   📄 contains-duplicate.go
 │   │       📄 readme.md
 │   │   📂 2.1.valid-anagram
 │   │       📄 readme.md
