@@ -36,24 +36,35 @@
 │   │   📂 1.9.contains-duplicate
 │   │   │   📄 contains-duplicate.go
 │   │       📄 readme.md
+│   │   📂 2.0.random
+│   │       📄 random.go
 │   │   📂 2.1.valid-anagram
-│   │       📄 readme.md
+│   │   │   📄 readme.md
+│   │       📄 valid-anagrams.go
 │   │   📂 2.2.two-sum
-│   │       📄 readme.md
+│   │   │   📄 readme.md
+│   │       📄 two-sum.go
 │   │   📂 2.3.group-anagrams
+│   │   │   📄 group-anagrams.go
 │   │       📄 readme.md
 │   │   📂 2.4.top-k-frequent-element
+│   │   │   📄 k-frequent.go
 │   │       📄 readme.md
 │   │   📂 2.5.encode-and-decode-strings
+│   │   │   📄 encode-decode.go
 │   │       📄 readme.md
 │   │   📂 2.6.is-a-leap-year
+│   │   │   📄 leap-year.go
 │   │       📄 readme.md
 │   │   📂 2.7.isogram
+│   │   │   📄 isogram.go
 │   │       📄 readme.md
 │   │   📂 2.8.scrabble
-│   │       📄 readme.md
+│   │   │   📄 readme.md
+│   │       📄 scrabble.go
 │   │   📂 2.9.trinary
-│   │       📄 readme.md
+│   │   │   📄 readme.md
+│   │       📄 trinary.go
 │   │   📂 3.0.encode-length
 │   │       📄 readme.md
 │   │   📂 3.3.max-area
