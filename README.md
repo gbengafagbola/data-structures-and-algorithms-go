@@ -66,11 +66,18 @@
 │   │   │   📄 readme.md
 │   │       📄 trinary.go
 │   │   📂 3.0.encode-length
+│   │   │   📄 encode-length.go
 │   │       📄 readme.md
+│   │   📂 3.1.product-except-self
+│   │       📄 product.go
+│   │   📂 3.2.valid-sudoku
+│   │       📄 valid-sudoku.go
 │   │   📂 3.3.max-area
+│   │   │   📄 max-area.go
 │   │       📄 readme.md
 │       📂 3.4.valid-mountian-array
-│           📄 readme.md
+│       │   📄 readme.md
+│           📄 valid-mountain.go
 │   📂 1.1.linked-list
 │   │   📂 doubly-linked-list
 │   │   │   📂 1.0.create-a-vowel-double-linked-list
