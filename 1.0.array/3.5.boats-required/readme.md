@@ -108,3 +108,5 @@ limit = 6
 ## Summary
 This implementation effectively finds the minimum number of boats using sorting and a **greedy** two-pointer approach. It ensures that heavier individuals are accommodated efficiently while minimizing the total boat usage.
 
+
+[source](https://leetcode.com/problems/boats-to-save-people)
