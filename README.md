@@ -81,8 +81,11 @@
 │   │   📂 3.5.boats-required
 │   │   │   📄 boats-required.go
 │   │       📄 readme.md
-│       📂 3.6.move-zeroes
-│       │   📄 move-zeroes.go
+│   │   📂 3.6.move-zeroes
+│   │   │   📄 move-zeroes.go
+│   │       📄 readme.md
+│       📂 3.7.longest-substring
+│       │   📄 longest-substring.go
 │           📄 readme.md
 │   📂 1.1.linked-list
 │   │   📂 doubly-linked-list
