@@ -5,7 +5,7 @@ import (
 	"math"
 )
 
-func lengthOfLoongestSubString(s string) int {
+func lengthOfLongestSubString(s string) int {
 	if len(s) <= 1 {
 		return len(s)
 	}
@@ -30,6 +30,6 @@ func lengthOfLoongestSubString(s string) int {
 func main() {
 	s := "abcabcbb"
 
-	result := lengthOfLoongestSubString(s)
+	result := lengthOfLongestSubString(s)
 	fmt.Println(result)
 }
