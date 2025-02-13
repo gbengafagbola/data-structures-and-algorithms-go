@@ -1,0 +1,35 @@
+package main
+
+import (
+	"fmt"
+	"math"
+)
+
+func lengthOfLoongestSubString(s string) int {
+	if len(s) <= 1 {
+		return len(s)
+	}
+
+	left, right := 0, 0
+	maxLen := 0
+
+	chars := make(map[byte]int)
+
+	for i := 0; i < len(s); i++ {
+		if val, ok := chars[s[i]]; ok {
+			left = int(math.Max(float64(left), float64(val+1)))
+		}
+		right++
+		chars[s[i]] = i
+		maxLen = int(math.Max(float64(right-left), float64(maxLen)))
+	}
+
+	return maxLen
+}
+
+func main() {
+	s := "abcabcbb"
+
+	result := lengthOfLoongestSubString(s)
+	fmt.Println(result)
+}
