@@ -93,3 +93,5 @@ nums = [2, 1, 0, 4, 0, 0, 6]
 ## Summary
 This implementation efficiently moves zeroes to the end while preserving the order of non-zero elements using an **in-place two-pointer technique**.
 
+
+[source](https://leetcode.com/problems/move-zeroes)
