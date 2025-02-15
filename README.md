@@ -188,6 +188,6 @@
 │   📂 generate
 │       📄 generate.go
 │   📄 go.mod
-│   📄 keys.go
+│   📄 keys.readme
     📄 main.go
 ```
