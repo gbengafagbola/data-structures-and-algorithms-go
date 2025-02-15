@@ -84,9 +84,11 @@
 │   │   📂 3.6.move-zeroes
 │   │   │   📄 move-zeroes.go
 │   │       📄 readme.md
-│       📂 3.7.longest-substring
-│       │   📄 longest-substring.go
-│           📄 readme.md
+│   │   📂 3.7.longest-substring
+│   │   │   📄 longest-substring.go
+│   │       📄 readme.md
+│       📂 3.8.find-first-last
+│           📄 find-first-and-last-index-of-target.go
 │   📂 1.1.linked-list
 │   │   📂 doubly-linked-list
 │   │   │   📂 1.0.create-a-vowel-double-linked-list
