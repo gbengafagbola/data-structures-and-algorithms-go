@@ -1,8 +1,10 @@
 package main
 
+import "fmt"
+
 import (
-	"log"       // Importing log package
 	"dsa-golang/generate"
+	"log" // Importing log package
 )
 
 func main() {
