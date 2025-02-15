@@ -1,4 +1,5 @@
 package main
+import "fmt"
 
 func target(arr []int, target int) []int {
 

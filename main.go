@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 import (
 	"dsa-golang/generate"
 	"log" // Importing log package
