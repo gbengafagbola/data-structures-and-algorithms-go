@@ -3,9 +3,9 @@ import "fmt"
 
 func target(arr []int, target int) []int {
 
-	// if len(arr) <= 1 {
-
-	// }
+	if len(arr) == 0 {
+		return  []int{0, 0}
+	}
 
 	left := 0 
 	right := len(arr)-1
