@@ -92,7 +92,8 @@
 │   │   │   📄 find-first-and-last-index-of-target.go
 │   │       📄 readme.md
 │       📂 3.9.is-bad-version
-│           📄 bad-version.go
+│       │   📄 bad-version.go
+│           📄 readme.md
 │   📂 1.1.linked-list
 │   │   📂 doubly-linked-list
 │   │   │   📂 1.0.create-a-vowel-double-linked-list
