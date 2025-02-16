@@ -88,9 +88,11 @@
 │   │   📂 3.7.longest-substring
 │   │   │   📄 longest-substring.go
 │   │       📄 readme.md
-│       📂 3.8.find-first-last
-│       │   📄 find-first-and-last-index-of-target.go
-│           📄 readme.md
+│   │   📂 3.8.find-first-last
+│   │   │   📄 find-first-and-last-index-of-target.go
+│   │       📄 readme.md
+│       📂 3.9.is-bad-version
+│           📄 bad-version.go
 │   📂 1.1.linked-list
 │   │   📂 doubly-linked-list
 │   │   │   📂 1.0.create-a-vowel-double-linked-list
