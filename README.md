@@ -32,7 +32,8 @@
 │   │   │   📄 readme.md
 │   │       📄 sort.go
 │   │   📂 1.8.smallest-positive-missing-number
-│   │       📄 missing-number.go
+│   │   │   📄 missing-number.go
+│   │       📄 readme.md
 │   │   📂 1.9.contains-duplicate
 │   │   │   📄 contains-duplicate.go
 │   │       📄 readme.md
