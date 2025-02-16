@@ -29,4 +29,7 @@ func firstBadVersion(n int) int {
 	return left
 }
 
-
+func main() {
+	num := 1
+	fmt.Println(firstBadVersion(num))
+}
