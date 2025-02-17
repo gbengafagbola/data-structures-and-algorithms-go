@@ -38,7 +38,8 @@
 │   │   │   📄 contains-duplicate.go
 │   │       📄 readme.md
 │   │   📂 2.0.random
-│   │       📄 random.go
+│   │   │   📄 random.go
+│   │       📄 readme.md
 │   │   📂 2.1.valid-anagram
 │   │   │   📄 readme.md
 │   │       📄 valid-anagrams.go
