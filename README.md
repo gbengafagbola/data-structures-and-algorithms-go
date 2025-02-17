@@ -71,7 +71,8 @@
 │   │   │   📄 encode-length.go
 │   │       📄 readme.md
 │   │   📂 3.1.product-except-self
-│   │       📄 product.go
+│   │   │   📄 product.go
+│   │       📄 readme.md
 │   │   📂 3.2.valid-sudoku
 │   │       📄 valid-sudoku.go
 │   │   📂 3.3.max-area
