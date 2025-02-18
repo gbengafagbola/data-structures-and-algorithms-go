@@ -1,16 +1,15 @@
 ## useful arsernal for combating array problems are
 
 1. Sorting
-2. Hash Table/Map
-3. Pointers - Sliding Window
-4. Binary Search: especially usefulgit p in finding an item(s) in a sorted array
-5. linear search: going through every iteration index by index
+2. Frequency Counters:- Hash Map & Array / Slice 
+3. Multiple Pointers - Sliding Window 
+4. Binary Search: especially useful for searching item(s) in a sorted array
+5. linear search: going through every iteration index by index (mostly least performant but useful for edge cases)
 
 
 
 
 
 
-// Que's/ Constraints to descuss with recruiter
-
-// 1. can i use methods
+Questions / Constraints to descuss with recruiter
+1. can i use methods
