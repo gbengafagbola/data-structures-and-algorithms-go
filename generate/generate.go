@@ -12,7 +12,7 @@ var (
 	outputFileName string
 	maxDepth       int
 	ignoredDirs    = map[string]bool{
-		".git":        true,
+		".git":         true,
 		"node_modules": true,
 	}
 )
@@ -20,6 +20,7 @@ var (
 // TreeNode represents a node in the tree structure.
 type TreeNode struct {
 	Name     string
+	Path     string
 	Children []*TreeNode
 	IsDir    bool
 }
@@ -33,6 +34,7 @@ func GenerateTree(root string, currentDepth int) (*TreeNode, error) {
 
 	rootNode := &TreeNode{
 		Name:  info.Name(),
+		Path:  root,
 		IsDir: info.IsDir(),
 	}
 
@@ -60,13 +62,16 @@ func GenerateTree(root string, currentDepth int) (*TreeNode, error) {
 	return rootNode, nil
 }
 
-// RenderTree recursively generates the tree as a string.
+// RenderTree generates the tree with Markdown links.
 func RenderTree(node *TreeNode, prefix string) string {
 	var sb strings.Builder
+	relativePath := strings.ReplaceAll(node.Path, " ", "%20") // Encode spaces in paths
+	link := fmt.Sprintf("[%s](%s)", node.Name, relativePath)
+
 	if node.IsDir {
-		sb.WriteString(fmt.Sprintf("%s📂 %s\n", prefix, node.Name))
+		sb.WriteString(fmt.Sprintf("%s📂 %s\n", prefix, link))
 	} else {
-		sb.WriteString(fmt.Sprintf("%s📄 %s\n", prefix, node.Name))
+		sb.WriteString(fmt.Sprintf("%s📄 %s\n", prefix, link))
 	}
 
 	for i, child := range node.Children {
@@ -80,22 +85,21 @@ func RenderTree(node *TreeNode, prefix string) string {
 	return sb.String()
 }
 
-// UpdateReadme writes the tree structure to README.md.
+// UpdateReadme writes the tree structure with links to README.md.
 func UpdateReadme(tree string) error {
 	readmeContent := fmt.Sprintf("# Codebase Structure\n\n```\n%s```\n", tree)
 	return os.WriteFile(outputFileName, []byte(readmeContent), 0644)
 }
 
-// Generate is the entry point that handles flag parsing and tree generation.
+// Generate handles flag parsing and tree generation.
 func Generate() error {
-	// Flags for customization
 	flag.StringVar(&outputFileName, "output", "README.md", "Output file name")
 	flag.IntVar(&maxDepth, "depth", 0, "Maximum depth of the tree (0 for no limit)")
 	flag.Parse()
 
-	rootDir := "." // Root directory of the project
+	rootDir := "."
 	if flag.NArg() > 0 {
-		rootDir = flag.Arg(0) // Use the first argument as the root directory
+		rootDir = flag.Arg(0)
 	}
 
 	tree, err := GenerateTree(rootDir, 0)
@@ -108,6 +112,6 @@ func Generate() error {
 		return fmt.Errorf("Error updating README.md: %v", err)
 	}
 
-	fmt.Println("Tree structure successfully written to", outputFileName)
+	fmt.Println("Tree structure with links successfully written to", outputFileName)
 	return nil
 }
