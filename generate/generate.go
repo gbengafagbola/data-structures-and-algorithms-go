@@ -62,7 +62,7 @@ func GenerateTree(root string, currentDepth int) (*TreeNode, error) {
 	return rootNode, nil
 }
 
-// RenderTree generates the tree with Markdown links.
+// RenderTree generates a Markdown list of files with clickable links.
 func RenderTree(node *TreeNode, prefix string) string {
 	var sb strings.Builder
 	relativePath := strings.ReplaceAll(node.Path, " ", "%20") // Encode spaces in paths
@@ -74,20 +74,16 @@ func RenderTree(node *TreeNode, prefix string) string {
 		sb.WriteString(fmt.Sprintf("%s📄 %s\n", prefix, link))
 	}
 
-	for i, child := range node.Children {
-		newPrefix := prefix + "│   "
-		if i == len(node.Children)-1 {
-			newPrefix = prefix + "    "
-		}
-		sb.WriteString(RenderTree(child, newPrefix))
+	for _, child := range node.Children {
+		sb.WriteString(RenderTree(child, prefix+"- "))
 	}
 
 	return sb.String()
 }
 
-// UpdateReadme writes the tree structure with links to README.md.
+// UpdateReadme writes the tree structure with links to a Markdown file.
 func UpdateReadme(tree string) error {
-	readmeContent := fmt.Sprintf("# Codebase Structure\n\n```\n%s```\n", tree)
+	readmeContent := fmt.Sprintf("# Codebase Structure\n\n%s", tree)
 	return os.WriteFile(outputFileName, []byte(readmeContent), 0644)
 }
 
@@ -109,7 +105,7 @@ func Generate() error {
 
 	treeString := RenderTree(tree, "")
 	if err := UpdateReadme(treeString); err != nil {
-		return fmt.Errorf("Error updating README.md: %v", err)
+		return fmt.Errorf("Error updating %s: %v", outputFileName, err)
 	}
 
 	fmt.Println("Tree structure with links successfully written to", outputFileName)
