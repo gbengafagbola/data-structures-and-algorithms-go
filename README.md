@@ -95,6 +95,8 @@
 - - 📂 [3.9.is-bad-version](1.0.array/3.9.is-bad-version)
 - - - 📄 [bad-version.go](1.0.array/3.9.is-bad-version/bad-version.go)
 - - - 📄 [readme.md](1.0.array/3.9.is-bad-version/readme.md)
+- - 📂 [4.0.missing-number](1.0.array/4.0.missing-number)
+- - - 📄 [missing-number.go](1.0.array/4.0.missing-number/missing-number.go)
 - 📂 [1.1.linked-list](1.1.linked-list)
 - - 📂 [doubly-linked-list](1.1.linked-list/doubly-linked-list)
 - - - 📂 [1.0.create-a-vowel-double-linked-list](1.1.linked-list/doubly-linked-list/1.0.create-a-vowel-double-linked-list)
