@@ -8,8 +8,8 @@ func missingNumber(nums []int) int {
 	currentSum := 0
 	intendedSum := n * (n + 1) / 2
 
-	for i := 0; i < n; i++ {
-		currentSum += i
+	for _, num := range nums {
+		currentSum += num
 	}
 
 	return intendedSum - currentSum
