@@ -1,7 +1,22 @@
 package main
 
-func missingNumber(nums []int) int {
+import "fmt"
 
+//mathematical approach using gauss formula
+func missingNumber(nums []int) int {
+	n := len(nums)
+	currentSum := 0
+	intendedSum := n * (n + 1) / 2
+
+	for i := 0; i < n; i++ {
+		currentSum += i
+	}
+
+	return intendedSum - currentSum
+}
+
+
+func missingNumber2(nums []int) int {
 	n := len(nums)
 
 	currentSum := 0
@@ -16,4 +31,10 @@ func missingNumber(nums []int) int {
 	}
 
 	return intendedSum - currentSum
+}
+
+
+func main() {
+	num := []int{1,3,4,5,6}
+	fmt.Println(missingNumber(num))
 }
