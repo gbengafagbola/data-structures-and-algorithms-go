@@ -1,6 +1,9 @@
 package main
 
-import "math"
+import (
+	"fmt"
+	"math"
+)
 
 func countPrimes(n int) int {
 	if n < 2 {
@@ -32,4 +35,9 @@ func countPrimes(n int) int {
 	}
 
 	return primeCount
+}
+
+
+func main() {
+	fmt.Println(countPrimes(20)) // Output: 8 (Primes: 2, 3, 5, 7, 11, 13, 17, 19)
 }
