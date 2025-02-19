@@ -100,6 +100,7 @@
 - - - 📄 [readme.md](1.0.array/4.0.missing-number/readme.md)
 - - 📂 [4.1.count-primes](1.0.array/4.1.count-primes)
 - - - 📄 [count-primes.go](1.0.array/4.1.count-primes/count-primes.go)
+- - - 📄 [readme.md](1.0.array/4.1.count-primes/readme.md)
 - 📂 [1.1.linked-list](1.1.linked-list)
 - - 📂 [doubly-linked-list](1.1.linked-list/doubly-linked-list)
 - - - 📂 [1.0.create-a-vowel-double-linked-list](1.1.linked-list/doubly-linked-list/1.0.create-a-vowel-double-linked-list)
