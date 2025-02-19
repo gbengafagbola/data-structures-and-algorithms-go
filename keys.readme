@@ -54,6 +54,11 @@
 
 ---
 
+Hacks
+tracker i.e. primes := make([]bool, n) 
+sieve of erastothenes
+
+
 ## 💬 Key Questions to Discuss with Interviewer
 
 1. **Can I use built-in methods?** (E.g., `sort()`, `map()`, `set()`)
