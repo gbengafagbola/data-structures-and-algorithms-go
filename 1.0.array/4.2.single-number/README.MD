@@ -69,9 +69,47 @@ Again, the duplicate numbers cancel out, leaving **7**.
 
 ---
 
+## 🛠️ How the XOR Results Are Computed  
+The XOR (`^`) operation works at the **bitwise level**, comparing corresponding bits of two numbers and returning `1` if the bits are different and `0` if they are the same.
+
+### **Example 1: `nums = [4, 1, 2, 1, 2]`**
+
+| Step | Number | Binary Representation | XOR Operation | Result |
+|------|--------|----------------------|--------------|--------|
+| Init | `answer = 0` | `0000` | - | `0000` |
+| `4`  | `4`  | `0100` | `0000 ⊕ 0100` | `0100` (4) |
+| `1`  | `1`  | `0001` | `0100 ⊕ 0001` | `0101` (5) |
+| `2`  | `2`  | `0010` | `0101 ⊕ 0010` | `0111` (7) |
+| `1`  | `1`  | `0001` | `0111 ⊕ 0001` | `0110` (6) |
+| `2`  | `2`  | `0010` | `0110 ⊕ 0010` | `0100` (4) |
+
+Final answer = **4** ✅ (since all duplicates canceled out)
+
+---
+
+### **Example 2: `nums = [3, 3, 7, 2, 2]`**
+
+| Step | Number | Binary Representation | XOR Operation | Result |
+|------|--------|----------------------|--------------|--------|
+| Init | `answer = 0` | `0000` | - | `0000` |
+| `3`  | `3`  | `0011` | `0000 ⊕ 0011` | `0011` (3) |
+| `3`  | `3`  | `0011` | `0011 ⊕ 0011` | `0000` (0) |
+| `7`  | `7`  | `0111` | `0000 ⊕ 0111` | `0111` (7) |
+| `2`  | `2`  | `0010` | `0111 ⊕ 0010` | `0101` (5) |
+| `2`  | `2`  | `0010` | `0101 ⊕ 0010` | `0111` (7) |
+
+Final answer = **7** ✅
+
+---
+
 ## 🎯 Why This is Efficient
 - **Time Complexity:** `O(n)`, since we iterate through the list once.
 - **Space Complexity:** `O(1)`, as we use only a single variable (`answer`).
 
-This is a **brilliant and elegant solution** leveraging XOR to efficiently find the unique number! 🚀🔥
+### 🔥 Summary of How XOR Works  
+1. **Same numbers cancel out (`x ⊕ x = 0`)**, removing duplicates.  
+2. **Order doesn’t matter** due to commutative property.  
+3. **The only number left is the unique one.**  
+
+This is why XOR is a **powerful trick** for problems involving pairs! 🚀
 
