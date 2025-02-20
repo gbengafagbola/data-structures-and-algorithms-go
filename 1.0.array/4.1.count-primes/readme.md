@@ -163,3 +163,5 @@ By using `sqrt(n)`, we cut unnecessary iterations, making prime checking efficie
 ## Summary
 This implementation efficiently counts primes using the **Sieve of Eratosthenes**, and the `sqrt(n)` trick optimizes performance by limiting unnecessary iterations. 🚀
 
+
+[source](https://https://leetcode.com/problems/count-primes)
