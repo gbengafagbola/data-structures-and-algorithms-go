@@ -109,6 +109,7 @@
 - - - 📄 [readme.md](1.0.array/4.3.judge-circle/readme.md)
 - - 📂 [4.4.add-binary](1.0.array/4.4.add-binary)
 - - - 📄 [add-binary.go](1.0.array/4.4.add-binary/add-binary.go)
+- - - 📄 [readme.md](1.0.array/4.4.add-binary/readme.md)
 - 📂 [1.1.linked-list](1.1.linked-list)
 - - 📂 [doubly-linked-list](1.1.linked-list/doubly-linked-list)
 - - - 📂 [1.0.create-a-vowel-double-linked-list](1.1.linked-list/doubly-linked-list/1.0.create-a-vowel-double-linked-list)
