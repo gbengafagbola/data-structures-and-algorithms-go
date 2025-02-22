@@ -10,8 +10,8 @@ func twoSum(nums []int, target int) []int {
 			return []int{index, i} 
 		}
 		numMap[num] = i
-	}
-	return nil 
+	} 
+	return []int{}
 }
 
 func main() {
