@@ -8,7 +8,9 @@ Given four integer arrays `A`, `B`, `C`, and `D`, each of length `n`, compute ho
 ## Algorithm Explanation
 The function `fourSumCount` efficiently solves this problem using a **hash map (dictionary)** to store intermediate sums, which reduces the time complexity compared to a brute-force approach.
 
-## Steps Breakdown
+## Approach 1: Basic Hash Map Optimization
+
+### Steps Breakdown
 ### Step 1: Precompute Partial Sums for `A` and `B`
 We iterate over every combination of elements from `A` and `B` and store the sum frequencies in a hash map `m`.
 
@@ -60,7 +62,7 @@ We check these values in `m`:
 
 Total valid tuples: `2`.
 
-## Code Walkthrough
+### Code
 ```go
 func fourSumCount(A []int, B []int, C []int, D []int) int {
     m := map[int]int{}
@@ -90,6 +92,42 @@ func fourSumCount(A []int, B []int, C []int, D []int) int {
     return ans
 }
 ```
+
+## Approach 2: Optimized Hash Map with Preallocation
+This approach improves performance by:
+1. **Using a preallocated map** to reduce memory allocation overhead.
+2. **Directly incrementing values in the map** to minimize conditional checks.
+
+### Code
+```go
+func fourSumCount(nums1 []int, nums2 []int, nums3 []int, nums4 []int) int {
+    data := make(map[int]int, len(nums1)*len(nums2))
+    for _, num1 := range nums1 {
+        for _, num2 := range nums2 {
+            data[num1+num2]++
+        }
+    }
+    var ret int
+    for _, num3 := range nums3 {
+        for _, num4 := range nums4 {
+            ret += data[-num3-num4]
+        }
+    }
+    return ret
+}
+```
+
+### Why Preallocate `data`?
+The line:
+```go
+data := make(map[int]int, len(nums1)*len(nums2))
+```
+**Optimizes performance by:**
+- **Avoiding unnecessary map resizing**: Go dynamically resizes maps, which incurs overhead.
+- **Reducing memory fragmentation**: Allocating upfront ensures contiguous memory usage.
+- **Speeding up insertions**: Directly inserting values without checking conditions improves efficiency.
+
+Since `nums1` and `nums2` contribute `len(nums1) * len(nums2)` sums, preallocating ensures the map has enough capacity.
 
 ## Complexity Analysis
 - **Step 1:** Constructing the hash map takes **O(n²)** time.
