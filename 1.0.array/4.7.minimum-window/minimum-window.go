@@ -51,6 +51,8 @@ func minWindow(s, t string) string {
 	return s[startIndex : startIndex+minLen]
 }
 
+
+
 func minWindow2(s, t string) string {
 
 	lenString := len(s)
