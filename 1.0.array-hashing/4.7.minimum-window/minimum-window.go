@@ -18,7 +18,7 @@ func minWindow(s, t string) string {
 		hashPattern[t[i]]++
 	}
 
-	count, left, startIndex, minLen := 0, 0, -1, int(^uint(0)>>1)
+	count, left, startIndex, minLen := 0, 0, -1, int(^uint(0)>>1) // or minLen := len(s) + 1  --> make it less complex for this case
 
 	for right := 0; right < lenString; right++ {
 		c := s[right]
