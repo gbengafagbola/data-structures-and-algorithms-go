@@ -139,6 +139,7 @@
 - - - - 📄 [readme.md](1.1.linked-list/single-linked-list/1.0.create-a-vowel-linked-list/readme.md)
 - - - 📂 [1.1.a.merge-two-sorted-list](1.1.linked-list/single-linked-list/1.1.a.merge-two-sorted-list)
 - - - - 📄 [merge-two-sorted-list.go](1.1.linked-list/single-linked-list/1.1.a.merge-two-sorted-list/merge-two-sorted-list.go)
+- - - - 📄 [readme.md](1.1.linked-list/single-linked-list/1.1.a.merge-two-sorted-list/readme.md)
 - - - 📂 [1.1.b.leet-merge-two-sorted-list](1.1.linked-list/single-linked-list/1.1.b.leet-merge-two-sorted-list)
 - - - - 📄 [leet-two-merge-approach.go](1.1.linked-list/single-linked-list/1.1.b.leet-merge-two-sorted-list/leet-two-merge-approach.go)
 - - - 📄 [main.go](1.1.linked-list/single-linked-list/main.go)
