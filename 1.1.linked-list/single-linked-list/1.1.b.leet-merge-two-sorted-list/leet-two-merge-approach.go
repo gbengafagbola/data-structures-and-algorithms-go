@@ -42,7 +42,7 @@ func printList(head *ListNode) {
 	fmt.Println("nil")
 }
 
-func leetMain() {
+func main() {
 	// Example: list1 = [1, 3, 5], list2 = [2, 4, 6]
 	list1 := &ListNode{1, &ListNode{3, &ListNode{5, nil}}}
 	list2 := &ListNode{2, &ListNode{4, &ListNode{6, nil}}}
