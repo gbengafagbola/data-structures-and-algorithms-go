@@ -129,6 +129,7 @@
 - - - - 📄 [readme.md](1.1.linked-list/doubly-linked-list/1.0.create-a-vowel-double-linked-list/readme.md)
 - - - 📂 [1.1.least-recently-used-cache](1.1.linked-list/doubly-linked-list/1.1.least-recently-used-cache)
 - - - - 📄 [least-recently-used-cache.go](1.1.linked-list/doubly-linked-list/1.1.least-recently-used-cache/least-recently-used-cache.go)
+- - - - 📄 [readme.md](1.1.linked-list/doubly-linked-list/1.1.least-recently-used-cache/readme.md)
 - - - 📄 [main.go](1.1.linked-list/doubly-linked-list/main.go)
 - - - 📄 [readme.md](1.1.linked-list/doubly-linked-list/readme.md)
 - - 📄 [readme.md](1.1.linked-list/readme.md)
