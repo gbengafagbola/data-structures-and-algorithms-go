@@ -153,6 +153,7 @@
 - - - - 📄 [add-two-numbers.go](1.1.linked-list/single-linked-list/1.4.add-two-numbers/add-two-numbers.go)
 - - - - 📄 [readme.md](1.1.linked-list/single-linked-list/1.4.add-two-numbers/readme.md)
 - - - 📂 [1.5.remove-nth-from-end](1.1.linked-list/single-linked-list/1.5.remove-nth-from-end)
+- - - - 📄 [readme.md](1.1.linked-list/single-linked-list/1.5.remove-nth-from-end/readme.md)
 - - - - 📄 [remove-nth-from-end.go](1.1.linked-list/single-linked-list/1.5.remove-nth-from-end/remove-nth-from-end.go)
 - - - 📄 [main.go](1.1.linked-list/single-linked-list/main.go)
 - 📂 [1.2.stacks](1.2.stacks)
