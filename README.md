@@ -146,6 +146,8 @@
 - - - 📂 [1.2.has-cycle](1.1.linked-list/single-linked-list/1.2.has-cycle)
 - - - - 📄 [has-cycle.go](1.1.linked-list/single-linked-list/1.2.has-cycle/has-cycle.go)
 - - - - 📄 [readme.md](1.1.linked-list/single-linked-list/1.2.has-cycle/readme.md)
+- - - 📂 [1.3.reverse-list](1.1.linked-list/single-linked-list/1.3.reverse-list)
+- - - - 📄 [reverse-list.go](1.1.linked-list/single-linked-list/1.3.reverse-list/reverse-list.go)
 - - - 📄 [main.go](1.1.linked-list/single-linked-list/main.go)
 - 📂 [1.2.stacks](1.2.stacks)
 - - 📂 [1.0.vowel-implementation-of-stack](1.2.stacks/1.0.vowel-implementation-of-stack)
