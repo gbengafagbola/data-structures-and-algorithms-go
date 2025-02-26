@@ -145,6 +145,7 @@
 - - - - 📄 [readme.md](1.1.linked-list/single-linked-list/1.1.b.leet-merge-two-sorted-list/readme.md)
 - - - 📂 [1.2.has-cycle](1.1.linked-list/single-linked-list/1.2.has-cycle)
 - - - - 📄 [has-cycle.go](1.1.linked-list/single-linked-list/1.2.has-cycle/has-cycle.go)
+- - - - 📄 [readme.md](1.1.linked-list/single-linked-list/1.2.has-cycle/readme.md)
 - - - 📄 [main.go](1.1.linked-list/single-linked-list/main.go)
 - 📂 [1.2.stacks](1.2.stacks)
 - - 📂 [1.0.vowel-implementation-of-stack](1.2.stacks/1.0.vowel-implementation-of-stack)
