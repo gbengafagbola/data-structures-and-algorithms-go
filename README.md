@@ -155,6 +155,8 @@
 - - - 📂 [1.5.remove-nth-from-end](1.1.linked-list/single-linked-list/1.5.remove-nth-from-end)
 - - - - 📄 [readme.md](1.1.linked-list/single-linked-list/1.5.remove-nth-from-end/readme.md)
 - - - - 📄 [remove-nth-from-end.go](1.1.linked-list/single-linked-list/1.5.remove-nth-from-end/remove-nth-from-end.go)
+- - - 📂 [1.6.odd-even-linked-list](1.1.linked-list/single-linked-list/1.6.odd-even-linked-list)
+- - - - 📄 [odd-even-linked-list.go](1.1.linked-list/single-linked-list/1.6.odd-even-linked-list/odd-even-linked-list.go)
 - - - 📄 [main.go](1.1.linked-list/single-linked-list/main.go)
 - 📂 [1.2.stacks](1.2.stacks)
 - - 📂 [1.0.vowel-implementation-of-stack](1.2.stacks/1.0.vowel-implementation-of-stack)
