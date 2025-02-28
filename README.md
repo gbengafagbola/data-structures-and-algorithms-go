@@ -45,6 +45,8 @@
 - - 📂 [2.2.a.two-sum](1.0.array-hashing/2.2.a.two-sum)
 - - - 📄 [readme.md](1.0.array-hashing/2.2.a.two-sum/readme.md)
 - - - 📄 [two-sum.go](1.0.array-hashing/2.2.a.two-sum/two-sum.go)
+- - 📂 [2.2.b.two-number-sum](1.0.array-hashing/2.2.b.two-number-sum)
+- - - 📄 [readme.md](1.0.array-hashing/2.2.b.two-number-sum/readme.md)
 - - 📂 [2.3.group-anagrams](1.0.array-hashing/2.3.group-anagrams)
 - - - 📄 [group-anagrams.go](1.0.array-hashing/2.3.group-anagrams/group-anagrams.go)
 - - - 📄 [readme.md](1.0.array-hashing/2.3.group-anagrams/readme.md)
