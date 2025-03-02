@@ -128,6 +128,8 @@
 - - 📂 [4.9.validate-subsequence](1.0.array-hashing/4.9.validate-subsequence)
 - - - 📄 [readme.md](1.0.array-hashing/4.9.validate-subsequence/readme.md)
 - - - 📄 [validate-subsequence.go](1.0.array-hashing/4.9.validate-subsequence/validate-subsequence.go)
+- - 📂 [5.0.sorted-squared-array](1.0.array-hashing/5.0.sorted-squared-array)
+- - - 📄 [sorted-squared-array.go](1.0.array-hashing/5.0.sorted-squared-array/sorted-squared-array.go)
 - 📂 [1.1.linked-list](1.1.linked-list)
 - - 📂 [doubly-linked-list](1.1.linked-list/doubly-linked-list)
 - - - 📂 [1.0.create-a-vowel-double-linked-list](1.1.linked-list/doubly-linked-list/1.0.create-a-vowel-double-linked-list)
