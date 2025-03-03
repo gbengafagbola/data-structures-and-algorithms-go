@@ -252,6 +252,7 @@
 - - - - 📄 [readme.md](1.9.design-patterns/2.0.structural/3.0.bridge/readme.md)
 - 📂 [2.0.backtracking](2.0.backtracking)
 - - 📂 [1.0.subset](2.0.backtracking/1.0.subset)
+- - - 📄 [readme.md](2.0.backtracking/1.0.subset/readme.md)
 - - - 📄 [subset.go](2.0.backtracking/1.0.subset/subset.go)
 - 📄 [README.md](README.md)
 - 📂 [generate](generate)
