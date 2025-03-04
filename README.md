@@ -257,6 +257,8 @@
 - - 📂 [1.1.letter-combination](2.0.backtracking/1.1.letter-combination)
 - - - 📄 [letter-combination.go](2.0.backtracking/1.1.letter-combination/letter-combination.go)
 - - - 📄 [readme.md](2.0.backtracking/1.1.letter-combination/readme.md)
+- - 📂 [1.2.combination-sum](2.0.backtracking/1.2.combination-sum)
+- - - 📄 [combination-sum.go](2.0.backtracking/1.2.combination-sum/combination-sum.go)
 - 📄 [README.md](README.md)
 - 📂 [generate](generate)
 - - 📄 [generate.go](generate/generate.go)
