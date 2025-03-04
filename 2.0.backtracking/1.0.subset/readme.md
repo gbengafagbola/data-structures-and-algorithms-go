@@ -175,7 +175,3 @@ nums := []int{1, 2, 2}
 result := subsets(nums)
 fmt.Println(result) // Output: [[], [1], [1, 2], [1, 2, 2], [2], [2, 2]]
 ```
-
----
-
-Let me know if you need further clarification! 😊
