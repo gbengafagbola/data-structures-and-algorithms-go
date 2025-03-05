@@ -267,6 +267,7 @@
 - 📂 [2.1.trees](2.1.trees)
 - - 📂 [is-symmetric](2.1.trees/is-symmetric)
 - - - 📄 [is-symmetric.go](2.1.trees/is-symmetric/is-symmetric.go)
+- - - 📄 [readme.md](2.1.trees/is-symmetric/readme.md)
 - 📄 [README.md](README.md)
 - 📂 [generate](generate)
 - - 📄 [generate.go](generate/generate.go)
