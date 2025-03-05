@@ -15,7 +15,6 @@ func isPalindrome(s string) bool {
 
 }
 
-
 func solution(s string, curArr []string, ans *[][]string) {
 	if len(s) == 0 {
 		temp := make([]string, len(curArr))
