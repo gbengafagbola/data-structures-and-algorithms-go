@@ -270,6 +270,7 @@
 - - - 📄 [readme.md](2.1.trees/1.0.is-symmetric/readme.md)
 - - 📂 [1.1.max-depth](2.1.trees/1.1.max-depth)
 - - - 📄 [max-depth.go](2.1.trees/1.1.max-depth/max-depth.go)
+- - - 📄 [readme.md](2.1.trees/1.1.max-depth/readme.md)
 - 📄 [README.md](README.md)
 - 📂 [generate](generate)
 - - 📄 [generate.go](generate/generate.go)
