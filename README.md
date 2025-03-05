@@ -262,6 +262,7 @@
 - - - 📄 [readme.md](2.0.backtracking/1.2.combination-sum/readme.md)
 - - 📂 [1.3.partition](2.0.backtracking/1.3.partition)
 - - - 📄 [partition.go](2.0.backtracking/1.3.partition/partition.go)
+- - - 📄 [readme.md](2.0.backtracking/1.3.partition/readme.md)
 - - 📄 [readme.md](2.0.backtracking/readme.md)
 - 📄 [README.md](README.md)
 - 📂 [generate](generate)
