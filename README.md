@@ -268,6 +268,7 @@
 - - 📂 [0.0.BST](2.1.trees/0.0.BST)
 - - - 📂 [kth-smallest](2.1.trees/0.0.BST/kth-smallest)
 - - - - 📄 [kth-smallest.go](2.1.trees/0.0.BST/kth-smallest/kth-smallest.go)
+- - - - 📄 [readme.md](2.1.trees/0.0.BST/kth-smallest/readme.md)
 - - 📂 [0.1.DFS](2.1.trees/0.1.DFS)
 - - - 📂 [1.0.has-path-sum](2.1.trees/0.1.DFS/1.0.has-path-sum)
 - - - - 📄 [has-path-sum.go](2.1.trees/0.1.DFS/1.0.has-path-sum/has-path-sum.go)
