@@ -268,6 +268,7 @@
 - - 📂 [0.1.DFS](2.1.trees/0.1.DFS)
 - - - 📂 [1.0.has-path-sum](2.1.trees/0.1.DFS/1.0.has-path-sum)
 - - - - 📄 [has-path-sum.go](2.1.trees/0.1.DFS/1.0.has-path-sum/has-path-sum.go)
+- - - - 📄 [readme.md](2.1.trees/0.1.DFS/1.0.has-path-sum/readme.md)
 - - 📂 [1.0.is-symmetric](2.1.trees/1.0.is-symmetric)
 - - - 📄 [is-symmetric.go](2.1.trees/1.0.is-symmetric/is-symmetric.go)
 - - - 📄 [readme.md](2.1.trees/1.0.is-symmetric/readme.md)
