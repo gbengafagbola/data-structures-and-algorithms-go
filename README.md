@@ -288,6 +288,7 @@
 - - - 📄 [readme.md](2.1.trees/1.1.max-depth/readme.md)
 - - 📂 [1.2.max-path-sum](2.1.trees/1.2.max-path-sum)
 - - - 📄 [max-path-sum.go](2.1.trees/1.2.max-path-sum/max-path-sum.go)
+- - - 📄 [readme.md](2.1.trees/1.2.max-path-sum/readme.md)
 - 📄 [README.md](README.md)
 - 📂 [generate](generate)
 - - 📄 [generate.go](generate/generate.go)
