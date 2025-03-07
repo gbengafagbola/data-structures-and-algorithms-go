@@ -173,6 +173,8 @@
 - 📂 [1.2.stacks](1.2.stacks)
 - - 📂 [1.0.vowel-implementation-of-stack](1.2.stacks/1.0.vowel-implementation-of-stack)
 - - - 📄 [main.go](1.2.stacks/1.0.vowel-implementation-of-stack/main.go)
+- - 📂 [1.1.min-stack](1.2.stacks/1.1.min-stack)
+- - - 📄 [min-stack.go](1.2.stacks/1.1.min-stack/min-stack.go)
 - - 📄 [main.go](1.2.stacks/main.go)
 - - 📄 [readme.md](1.2.stacks/readme.md)
 - 📂 [1.3.queue](1.3.queue)
