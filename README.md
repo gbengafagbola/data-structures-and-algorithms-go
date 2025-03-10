@@ -181,6 +181,8 @@
 - - 📂 [1.3.level-order](1.2.stacks/1.3.level-order)
 - - - 📄 [level-order.go](1.2.stacks/1.3.level-order/level-order.go)
 - - - 📄 [readme.md](1.2.stacks/1.3.level-order/readme.md)
+- - 📂 [1.4.zigzag](1.2.stacks/1.4.zigzag)
+- - - 📄 [zigzag.go](1.2.stacks/1.4.zigzag/zigzag.go)
 - - 📄 [main.go](1.2.stacks/main.go)
 - - 📄 [readme.md](1.2.stacks/readme.md)
 - 📂 [1.3.queue](1.3.queue)
