@@ -186,6 +186,7 @@
 - - - 📄 [zigzag.go](1.2.stacks/1.4.zigzag/zigzag.go)
 - - 📂 [1.5.post-order-traversal](1.2.stacks/1.5.post-order-traversal)
 - - - 📄 [post-order-traversal.go](1.2.stacks/1.5.post-order-traversal/post-order-traversal.go)
+- - - 📄 [readme.md](1.2.stacks/1.5.post-order-traversal/readme.md)
 - - 📄 [main.go](1.2.stacks/main.go)
 - - 📄 [readme.md](1.2.stacks/readme.md)
 - 📂 [1.3.queue](1.3.queue)
