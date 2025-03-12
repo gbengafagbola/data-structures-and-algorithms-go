@@ -307,6 +307,7 @@
 - - - 📄 [readme.md](2.1.trees/1.2.max-path-sum/readme.md)
 - 📂 [2.2.dynamic-programming](2.2.dynamic-programming)
 - - 📂 [1.0.rob](2.2.dynamic-programming/1.0.rob)
+- - - 📄 [readme.md](2.2.dynamic-programming/1.0.rob/readme.md)
 - - - 📄 [rob.go](2.2.dynamic-programming/1.0.rob/rob.go)
 - 📄 [README.md](README.md)
 - 📂 [generate](generate)
