@@ -113,5 +113,3 @@ func rob(nums []int) int {
 	return ans
 }
 ```
-
-Would you like a **diagram** for a more visual representation? 🚀
