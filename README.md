@@ -198,6 +198,7 @@
 - 📂 [1.3.queue](1.3.queue)
 - - 📂 [1.0.implement-queue-with-channel](1.3.queue/1.0.implement-queue-with-channel)
 - - - 📄 [main.go](1.3.queue/1.0.implement-queue-with-channel/main.go)
+- - - 📄 [readme.md](1.3.queue/1.0.implement-queue-with-channel/readme.md)
 - - 📄 [main.go](1.3.queue/main.go)
 - - 📄 [readme.md](1.3.queue/readme.md)
 - 📂 [1.4.binary-tree](1.4.binary-tree)
