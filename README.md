@@ -180,6 +180,7 @@
 - - - 📄 [main.go](1.2.stacks/1.0.vowel-implementation-of-stack/main.go)
 - - 📂 [1.1.min-stack](1.2.stacks/1.1.min-stack)
 - - - 📄 [min-stack.go](1.2.stacks/1.1.min-stack/min-stack.go)
+- - - 📄 [readme.md](1.2.stacks/1.1.min-stack/readme.md)
 - - 📂 [1.2.valid-parentheses](1.2.stacks/1.2.valid-parentheses)
 - - - 📄 [readme.md](1.2.stacks/1.2.valid-parentheses/readme.md)
 - - - 📄 [valid-parentheses.go](1.2.stacks/1.2.valid-parentheses/valid-parentheses.go)
