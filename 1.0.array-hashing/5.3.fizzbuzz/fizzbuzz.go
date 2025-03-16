@@ -1,0 +1,20 @@
+package main
+import "fmt"
+
+func fizzBuzz(n int32) {
+    // Write your code here
+    for i := 1; i <= int(n); i++ {     
+        switch {
+            case i%3 == 0 && i%5 == 0:
+                fmt.Println("FizzBuzz")
+            case i%5 == 0:
+                fmt.Println("Buzz")
+            case i%3 == 0:
+                fmt.Println("Fizz")
+            default:
+                fmt.Println(i)
+        }
+        
+    }
+
+}
