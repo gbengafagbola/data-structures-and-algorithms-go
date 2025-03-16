@@ -136,6 +136,8 @@
 - - 📂 [5.2.replace](1.0.array-hashing/5.2.replace)
 - - - 📄 [readme.md](1.0.array-hashing/5.2.replace/readme.md)
 - - - 📄 [replace.go](1.0.array-hashing/5.2.replace/replace.go)
+- - 📂 [5.3.fizzbuzz](1.0.array-hashing/5.3.fizzbuzz)
+- - - 📄 [fizzbuzz.go](1.0.array-hashing/5.3.fizzbuzz/fizzbuzz.go)
 - 📂 [1.1.linked-list](1.1.linked-list)
 - - 📂 [doubly-linked-list](1.1.linked-list/doubly-linked-list)
 - - - 📂 [1.0.create-a-vowel-double-linked-list](1.1.linked-list/doubly-linked-list/1.0.create-a-vowel-double-linked-list)
