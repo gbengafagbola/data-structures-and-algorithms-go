@@ -139,6 +139,8 @@
 - - 📂 [5.3.fizzbuzz](1.0.array-hashing/5.3.fizzbuzz)
 - - - 📄 [fizzbuzz.go](1.0.array-hashing/5.3.fizzbuzz/fizzbuzz.go)
 - - - 📄 [readme.md](1.0.array-hashing/5.3.fizzbuzz/readme.md)
+- - 📂 [5.4.ind](1.0.array-hashing/5.4.ind)
+- - - 📄 [ind..go](1.0.array-hashing/5.4.ind/ind..go)
 - 📂 [1.1.linked-list](1.1.linked-list)
 - - 📂 [doubly-linked-list](1.1.linked-list/doubly-linked-list)
 - - - 📂 [1.0.create-a-vowel-double-linked-list](1.1.linked-list/doubly-linked-list/1.0.create-a-vowel-double-linked-list)
