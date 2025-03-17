@@ -1,6 +1,5 @@
 
 package main
-
 import "fmt"
 
 func numberOfItems(s string, startIndices, endIndicies []int32) []int32 {
@@ -36,7 +35,6 @@ func numberOfItems(s string, startIndices, endIndicies []int32) []int32 {
 
 	answer := []int32{int32(count1), int32(count2)}
 	return answer
-
 }
 
 func main() {
