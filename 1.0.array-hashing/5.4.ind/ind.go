@@ -56,7 +56,34 @@ func numberOfItems(s string, startIndices, endIndices []int32) []int32 {
 	return result
 }
 
-func numberOfItems2(s string, startIndices, endIndicies []int32) []int32 {
+func numberOfItems2(s string, startIndices, endIndices []int32) []int32 {
+	results := make([]int32, len(startIndices))
+
+	for q := 0; q < len(startIndices); q++ {
+		start := int(startIndices[q]) - 1
+		end := int(endIndices[q])
+
+		subString := s[start:end]
+		count := 0
+		pipePositions := []int{}
+
+		// Identify positions of `|` and count `*` between them
+		for i := 0; i < len(subString); i++ {
+			if subString[i] == '|' {
+				pipePositions = append(pipePositions, i)
+				if len(pipePositions) == 2 {
+					count += (pipePositions[1] - pipePositions[0] - 1)
+					pipePositions = []int{pipePositions[1]}
+				}
+			}
+		}
+		results[q] = int32(count)
+	}
+
+	return results
+}
+
+func numberOfItems3(s string, startIndices, endIndicies []int32) []int32 {
 	subString1 := s[((startIndices[0]) -1) : (endIndicies[0])] // s[1:5]
 	subString2 := s[((startIndices[1]) -1) : (endIndicies[1])] // s[1:6]
 
