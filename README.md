@@ -132,6 +132,7 @@
 - - - 📄 [readme.md](1.0.array-hashing/5.0.sorted-squared-array/readme.md)
 - - - 📄 [sorted-squared-array.go](1.0.array-hashing/5.0.sorted-squared-array/sorted-squared-array.go)
 - - 📂 [5.1.tournament-winner](1.0.array-hashing/5.1.tournament-winner)
+- - - 📄 [readme.md](1.0.array-hashing/5.1.tournament-winner/readme.md)
 - - - 📄 [tournament-winner.go](1.0.array-hashing/5.1.tournament-winner/tournament-winner.go)
 - - 📂 [5.2.replace](1.0.array-hashing/5.2.replace)
 - - - 📄 [readme.md](1.0.array-hashing/5.2.replace/readme.md)
