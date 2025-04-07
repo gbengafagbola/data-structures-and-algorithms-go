@@ -1,9 +1,10 @@
 package main
 
 import (
+	"sort"
 	"strings"
 )
- 
+
 func processLogs(logs []string, threshold int32) []string {
 	m := make(map[string]int) // Store user transaction counts
 
@@ -19,11 +20,22 @@ func processLogs(logs []string, threshold int32) []string {
 		receiver := transaction[1]
 
 		// Count transactions for sender and receiver
-		m[sender]++ // Sender always gets counted
+		m[sender]++
 		if sender != receiver {
-			m[receiver]++ // Receiver only gets counted if different
+			m[receiver]++
 		}
 	}
-	return 
+
+	// Collect users that meet the threshold
+	var result []string
+	for user, count := range m {
+		if int32(count) >= threshold {
+			result = append(result, user)
+		}
+	}
+
+	// Sort the result lexicographically
+	sort.Strings(result)
+
+	return result
 }
- 
