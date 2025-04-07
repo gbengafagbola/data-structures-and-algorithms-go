@@ -146,6 +146,7 @@
 - - - 📄 [logs.go](1.0.array-hashing/5.5.logs/logs.go)
 - - 📂 [5.6.non-constructible-change](1.0.array-hashing/5.6.non-constructible-change)
 - - - 📄 [non-constructible-change.go](1.0.array-hashing/5.6.non-constructible-change/non-constructible-change.go)
+- - - 📄 [readme.md](1.0.array-hashing/5.6.non-constructible-change/readme.md)
 - 📂 [1.1.linked-list](1.1.linked-list)
 - - 📂 [doubly-linked-list](1.1.linked-list/doubly-linked-list)
 - - - 📂 [1.0.create-a-vowel-double-linked-list](1.1.linked-list/doubly-linked-list/1.0.create-a-vowel-double-linked-list)
