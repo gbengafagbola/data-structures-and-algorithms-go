@@ -150,6 +150,7 @@
 - - - 📄 [readme.md](1.0.array-hashing/5.6.non-constructible-change/readme.md)
 - - 📂 [5.7.transpose-matrix](1.0.array-hashing/5.7.transpose-matrix)
 - - - 📄 [5.7.transpose-matrix.go](1.0.array-hashing/5.7.transpose-matrix/5.7.transpose-matrix.go)
+- - - 📄 [readme.md](1.0.array-hashing/5.7.transpose-matrix/readme.md)
 - 📂 [1.1.linked-list](1.1.linked-list)
 - - 📂 [doubly-linked-list](1.1.linked-list/doubly-linked-list)
 - - - 📂 [1.0.create-a-vowel-double-linked-list](1.1.linked-list/doubly-linked-list/1.0.create-a-vowel-double-linked-list)
