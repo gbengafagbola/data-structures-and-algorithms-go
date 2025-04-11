@@ -93,7 +93,3 @@ README.md       # You're reading it!
 ```
 
 ---
-
-## 👨‍💻 Author
-
-**Oluwagbenga Fagbola**
