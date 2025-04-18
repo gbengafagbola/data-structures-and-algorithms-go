@@ -156,6 +156,8 @@
 - - 📂 [5.9.smallest-difference](1.0.array-hashing/5.9.smallest-difference)
 - - - 📄 [readme.md](1.0.array-hashing/5.9.smallest-difference/readme.md)
 - - - 📄 [smallest-difference.go](1.0.array-hashing/5.9.smallest-difference/smallest-difference.go)
+- - 📂 [6.0.move-element-to-end](1.0.array-hashing/6.0.move-element-to-end)
+- - - 📄 [move-element-to-end.go](1.0.array-hashing/6.0.move-element-to-end/move-element-to-end.go)
 - 📂 [1.1.linked-list](1.1.linked-list)
 - - 📂 [doubly-linked-list](1.1.linked-list/doubly-linked-list)
 - - - 📂 [1.0.create-a-vowel-double-linked-list](1.1.linked-list/doubly-linked-list/1.0.create-a-vowel-double-linked-list)
