@@ -1,6 +1,26 @@
 package main
 
 func MoveElementToEnd(array []int, toMove int) []int {
+	i := 0
+	j := len(array) -1
+
+	for i < j {
+		if array[j] != toMove && array[i] == toMove {
+			array[i], array[j] = array[j], array[i]
+			i++
+			j--
+		} else if array[j] == toMove && array[i] == toMove {
+			j--
+		} else {
+			i++
+		}
+	}
+	return array
+}
+
+
+
+func MoveElementToEnd2(array []int, toMove int) []int {
 	left := 0
 	right := len(array) - 1
 
@@ -17,7 +37,7 @@ func MoveElementToEnd(array []int, toMove int) []int {
 	return array
 }
 
-func MoveElementToEnd2(array []int, toMove int) []int {
+func MoveElementToEnd3(array []int, toMove int) []int {
 	result := []int{}
 	toMoveList := []int{}
 
