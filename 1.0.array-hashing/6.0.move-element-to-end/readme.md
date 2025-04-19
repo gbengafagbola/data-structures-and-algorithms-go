@@ -1,18 +1,19 @@
-Here's a very detailed `README.md` that explains both versions of your `MoveElementToEnd` function — the in-place version and the order-preserving version.
+Absolutely! Here's the updated `README.md` with your **new implementation** included and clearly explained alongside the previous ones.
 
 ---
 
 # 🧱 Move Element to End in Go
 
-This Go package provides two approaches to solving a classic array manipulation problem: **"Move all instances of a given element to the end of an array."**
+This Go package provides **three** different approaches to solving a classic array manipulation problem:  
+**"Move all instances of a given element to the end of an array."**
 
-It’s a common task during coding interviews and is helpful for understanding array traversal, pointer manipulation, and memory optimization.
+This problem is frequently asked in technical interviews and is great for understanding pointer manipulation, time-space trade-offs, and in-place algorithms.
 
 ---
 
 ## 🧩 Problem Statement
 
-Given an array of integers and a target integer `toMove`, move all instances of `toMove` to the end of the array. The order of the other elements does **not** have to be preserved (unless specifically required).
+> Given an array of integers and a target integer `toMove`, move all instances of `toMove` to the end of the array.
 
 ---
 
@@ -24,14 +25,51 @@ Input:
   toMove = 2
 
 Output:
-  [1, 3, 4, 1, 2, 2, 2, 2, 2] // The 2s are at the end. Order of others may vary.
+  [1, 3, 4, 1, 2, 2, 2, 2, 2]
 ```
 
 ---
 
-## ✅ Approaches
+## ✅ Implementations
 
-### 1. In-Place Swapping Using Two Pointers (Efficient)
+### 1. 🔁 In-Place with Two Pointers (Cleanest)
+
+```go
+func MoveElementToEnd(array []int, toMove int) []int {
+	i := 0
+	j := len(array) - 1
+
+	for i < j {
+		if array[j] != toMove && array[i] == toMove {
+			array[i], array[j] = array[j], array[i]
+			i++
+			j--
+		} else if array[j] == toMove && array[i] == toMove {
+			j--
+		} else {
+			i++
+		}
+	}
+	return array
+}
+```
+
+#### 🔍 How It Works
+
+- Starts with two pointers (`i` from the start, `j` from the end).
+- If `i` points to `toMove` and `j` doesn’t, swap them.
+- If both point to `toMove`, only move `j` left.
+- Otherwise, increment `i`.
+- **In-place**, efficient, and minimal branching.
+
+#### ⏱️ Time & Space
+
+- Time Complexity: **O(n)**
+- Space Complexity: **O(1)**
+
+---
+
+### 2. ♻️ In-Place with Right Skip Optimization
 
 ```go
 func MoveElementToEnd(array []int, toMove int) []int {
@@ -51,25 +89,19 @@ func MoveElementToEnd(array []int, toMove int) []int {
 }
 ```
 
-### 🧠 How It Works
+#### 🔍 Difference from version 1:
 
-- Use two pointers (`left` and `right`) from both ends of the array.
-- If the `right` pointer is already pointing at `toMove`, just move it left.
-- If the `left` pointer is at a `toMove` value, swap it with the `right` pointer's value.
-- Continue this until the pointers meet.
-- **Time Complexity**: O(n)
-- **Space Complexity**: O(1) — done in-place
+- Optimizes by skipping consecutive `toMove`s from the end using an inner loop.
+- Swaps immediately when it finds `toMove` on the left.
 
-### 🧪 Example
+#### ⏱️ Time & Space
 
-```go
-Input:  [2, 1, 2, 3, 2, 4]
-Output: [4, 1, 3, 2, 2, 2]  // 2s moved to the end (order not guaranteed)
-```
+- Time Complexity: **O(n)**
+- Space Complexity: **O(1)**
 
 ---
 
-### 2. Order-Preserving With Extra Space (Clean)
+### 3. 🧼 Order-Preserving with Extra Space
 
 ```go
 func MoveElementToEndPreservingOrder(array []int, toMove int) []int {
@@ -88,38 +120,32 @@ func MoveElementToEndPreservingOrder(array []int, toMove int) []int {
 }
 ```
 
-### 🧠 How It Works
+#### 🧠 Why `...` (spread operator)?
 
-- Create two new slices:
-  - `result` for non-`toMove` values
-  - `toMoveList` for `toMove` values
-- Traverse the original array once.
-- At the end, **concatenate** the slices using:
-  
-  ```go
-  return append(result, toMoveList...)
-  ```
-
-- The `...` (variadic expansion operator) **unpacks** the slice `toMoveList` into individual elements, so it can be appended properly.
-
-### 🧪 Example
+The `...` tells Go to unpack the slice (`toMoveList`) and pass its elements individually into the `append` function. Without it, the compiler would raise an error.
 
 ```go
-Input:  [2, 1, 2, 3, 2, 4]
-Output: [1, 3, 4, 2, 2, 2]  // Preserves order of non-2 elements
-```
-
-### 🧠 Why the `...` Operator?
-
-In Go, when you want to append one slice to another, you must unpack the second slice using `...`. Otherwise, Go will think you're trying to append a slice **as a single element**, which is not allowed.
-
-```go
-// Correct
+// ✅ Correct
 append(result, toMoveList...)
 
-// Incorrect
-append(result, toMoveList) // compilation error
+// ❌ Error
+append(result, toMoveList)
 ```
+
+#### ⏱️ Time & Space
+
+- Time Complexity: **O(n)**
+- Space Complexity: **O(n)** (uses extra memory for two slices)
+
+---
+
+## 🔬 When Should You Use Each?
+
+| Use Case                                | Function Name                       | Memory Efficient | Preserves Order |
+|----------------------------------------|------------------------------------|------------------|-----------------|
+| Best overall performance and clarity   | `MoveElementToEnd` (newest version) | ✅ Yes           | ❌ No            |
+| Extra optimization on right skips      | `MoveElementToEnd` (optimized loop) | ✅ Yes           | ❌ No            |
+| You need to preserve order             | `MoveElementToEndPreservingOrder`  | ❌ No (O(n))     | ✅ Yes           |
 
 ---
 
@@ -136,19 +162,9 @@ func main() {
 	array := []int{1, 2, 2, 2, 2, 1, 4, 3, 2}
 	toMove := 2
 
-	fmt.Println("In-Place:", MoveElementToEnd(array, toMove))
+	fmt.Println("In-Place (Latest):", MoveElementToEnd(array, toMove))
 
 	array2 := []int{1, 2, 2, 2, 2, 1, 4, 3, 2}
 	fmt.Println("Order-Preserving:", MoveElementToEndPreservingOrder(array2, toMove))
 }
 ```
-
----
-
-## 🔬 When to Use What?
-
-| Use Case                              | Function Name                     | Memory Efficient | Preserves Order |
-|--------------------------------------|----------------------------------|------------------|-----------------|
-| In-place manipulation, best for large arrays | `MoveElementToEnd`               | ✅ Yes           | ❌ No            |
-| You need to preserve order              | `MoveElementToEndPreservingOrder` | ❌ No (uses extra slices) | ✅ Yes         |
-
