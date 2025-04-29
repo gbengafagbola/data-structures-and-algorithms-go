@@ -1,8 +1,29 @@
 package main
 
 
-
 func IsMonotonic(array []int) bool {
+    if len(array) <= 2 {
+        return true
+    }
+
+    direction := array[1] - array[0]
+
+    for i := 2; i < len(array); i++ {
+        if direction == 0 {
+            direction = array[i] - array[i-1]
+            continue
+        }
+
+        if breaksDirection(direction, array[i-1], array[i]) {
+            return false
+        }
+    }
+
+    return true
+}
+
+
+func IsMonotonic2(array []int) bool {
     if len(array) <= 2 {
         return true
     }
@@ -29,7 +50,7 @@ func breaksDirection(direction int, prev int, curr int) bool {
 }
 
 
-func IsMonotonic2(array []int) bool {
+func IsMonotonic3(array []int) bool {
     if len(array) <= 2 {
         return true
     }
