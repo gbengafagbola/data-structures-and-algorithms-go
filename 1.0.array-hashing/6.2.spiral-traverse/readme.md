@@ -153,6 +153,105 @@ func spiralFill(matrix [][]int, startRow, endRow, startCol, endCol int, result *
 }
 ```
 
+Perfect. Let's walk through the **spiral traversal algorithm step by step**, using a **visual example** and explaining how the bounds (`top`, `bottom`, `left`, `right`) define and shrink the spiral layer by layer.
+
+---
+
+### 📊 Example Matrix
+
+Let’s use this 3x4 matrix:
+
+```
+matrix = [
+  [1,  2,  3,  4],
+  [5,  6,  7,  8],
+  [9, 10, 11, 12]
+]
+```
+
+At the start:
+
+* `top = 0` (first row)
+* `bottom = 2` (last row, index 2)
+* `left = 0` (first column)
+* `right = 3` (last column, index 3)
+
+---
+
+### 🔁 First Spiral Layer
+
+**1. Traverse → right** along `top = 0` from `left` to `right`:
+
+```
+[1, 2, 3, 4]
+ ↑  ↑  ↑  ↑
+```
+
+→ Append: `1, 2, 3, 4`
+→ Then: `top++` → `top = 1`
+
+**2. Traverse ↓ down** along `right = 3` from `top` to `bottom`:
+
+```
+[       8]
+[       12]
+```
+
+→ Append: `8, 12`
+→ Then: `right--` → `right = 2`
+
+**3. Traverse ← left** along `bottom = 2` from `right` to `left`, only if `top <= bottom`:
+
+```
+[11, 10, 9]
+   ↑   ↑  ↑
+```
+
+→ Append: `11, 10, 9`
+→ Then: `bottom--` → `bottom = 1`
+
+**4. Traverse ↑ up** along `left = 0` from `bottom` to `top`, only if `left <= right`:
+
+```
+[5]
+```
+
+→ Append: `5`
+→ Then: `left++` → `left = 1`
+
+---
+
+### 🌀 Second Spiral Layer
+
+Updated bounds:
+
+* `top = 1`
+* `bottom = 1`
+* `left = 1`
+* `right = 2`
+
+**5. Traverse → right** again along `top = 1` from `left` to `right`:
+
+```
+[6, 7]
+ ↑  ↑
+```
+
+→ Append: `6, 7`
+→ Then: `top++` → `top = 2`
+
+Now `top > bottom` → loop ends.
+
+---
+
+### ✅ Final Output
+
+Result slice:
+
+```
+[1, 2, 3, 4, 8, 12, 11, 10, 9, 5, 6, 7]
+```
+
 ### 🔍 Step-by-Step Visualization
 
 #### First Call:
