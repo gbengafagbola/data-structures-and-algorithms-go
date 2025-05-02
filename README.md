@@ -163,6 +163,7 @@
 - - - 📄 [is-monotonic.go](1.0.array-hashing/6.1.is-monotonic/is-monotonic.go)
 - - - 📄 [readme.md](1.0.array-hashing/6.1.is-monotonic/readme.md)
 - - 📂 [6.2.spiral-traverse](1.0.array-hashing/6.2.spiral-traverse)
+- - - 📄 [readme.md](1.0.array-hashing/6.2.spiral-traverse/readme.md)
 - - - 📄 [spiral-traverse.go](1.0.array-hashing/6.2.spiral-traverse/spiral-traverse.go)
 - 📂 [1.1.linked-list](1.1.linked-list)
 - - 📂 [doubly-linked-list](1.1.linked-list/doubly-linked-list)
