@@ -165,6 +165,8 @@
 - - 📂 [6.2.spiral-traverse](1.0.array-hashing/6.2.spiral-traverse)
 - - - 📄 [readme.md](1.0.array-hashing/6.2.spiral-traverse/readme.md)
 - - - 📄 [spiral-traverse.go](1.0.array-hashing/6.2.spiral-traverse/spiral-traverse.go)
+- - 📂 [6.3.longest-peak](1.0.array-hashing/6.3.longest-peak)
+- - - 📄 [longest-peak.go](1.0.array-hashing/6.3.longest-peak/longest-peak.go)
 - 📂 [1.1.linked-list](1.1.linked-list)
 - - 📂 [doubly-linked-list](1.1.linked-list/doubly-linked-list)
 - - - 📂 [1.0.create-a-vowel-double-linked-list](1.1.linked-list/doubly-linked-list/1.0.create-a-vowel-double-linked-list)
