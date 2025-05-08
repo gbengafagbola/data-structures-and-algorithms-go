@@ -1,6 +1,70 @@
 package main
 
+import "math"
+
 func LongestPeak(array []int) int {
+	i := 1
+	n := len(array)
+	longestPeakLength := 0
+
+	for i < n-1 {
+		isPeak := array[i] > array[i-1] && array[i] > array[i+1]
+		if !isPeak {
+			i++
+			continue
+		}
+
+		leftIdx := i - 2
+		for leftIdx >= 0 && array[leftIdx] < array[leftIdx+1] {
+			leftIdx--
+		}
+
+		rightIdx := i + 2
+		for rightIdx < n && array[rightIdx] < array[rightIdx-1] {
+			rightIdx++
+		}
+
+		currentPeakLength := rightIdx - leftIdx - 1
+		longestPeakLength = int(math.Max(float64(currentPeakLength), float64(longestPeakLength)))
+
+		// Move i to the end of the current peak to avoid re-processing
+		i = rightIdx
+	}
+
+	return longestPeakLength
+}
+
+
+func LongestPeak2(array []int) int {
+
+	i := 1
+	n := len(array)
+	peaks := []int{}
+	longestPeakLength := 0
+
+	for i < n-1 {
+		if array[i] > array[i-1] && array[i] > array[i+1] {
+			peaks = append(peaks, i)
+		}
+		i++
+	}
+
+	for peak := range peaks {
+		i := 1
+		tempPeak := 0
+		if array[peak] > array[peak-i] && array[peak] > array[peak+i] {
+			tempPeak++
+		}
+		i++
+		if tempPeak < longestPeakLength {
+			longestPeakLength = tempPeak
+		}
+	}
+	return longestPeakLength
+
+}
+
+func LongestPeak3(array []int) int {
 	maxPeakLength := 0
 	n := len(array)
 	i := 1 // Start from second element
@@ -29,4 +93,3 @@ func LongestPeak(array []int) int {
 	}
 	return maxPeakLength
 }
-
