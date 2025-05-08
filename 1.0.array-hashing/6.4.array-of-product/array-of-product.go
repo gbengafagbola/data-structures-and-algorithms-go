@@ -1,6 +1,28 @@
 package main
 
+
 func ArrayOfProducts(array []int) []int {
+	n := len(array)
+	result := make([]int, n)
+
+	// First pass: prefix products
+	prefix := 1
+	for i := 0; i < n; i++ {
+		result[i] = prefix
+		prefix *= array[i]
+	}
+
+	// Second pass: suffix products
+	suffix := 1
+	for i := n - 1; i >= 0; i-- {
+		result[i] *= suffix
+		suffix *= array[i]
+	}
+
+	return result
+}
+
+func ArrayOfProducts2(array []int) []int {
 	result := []int{}
 
 	for i := 0; i < len(array); i++ {
