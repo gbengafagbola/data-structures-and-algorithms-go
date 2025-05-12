@@ -22,7 +22,7 @@ func ArrayOfProducts(array []int) []int {
 	return result
 }
 
-func ArrayOfProducts2(array []int) []int {
+func ArrayOfProducts3(array []int) []int {
 	result := []int{}
 
 	for i := 0; i < len(array); i++ {
@@ -47,4 +47,22 @@ func ArrayOfProducts2(array []int) []int {
 		result = append(result, currentProduct)
 	}
 	return result
+}
+
+func ArrayOfProducts4(array []int) []int {
+	n := len(array)
+	products := make([]int, 1, n)
+
+	for i := range array {
+		runningProduct := 1
+
+		for j := range array {
+			if i != j {
+				runningProduct *= array[j]
+			}
+		}
+	products[i] = runningProduct
+	}
+
+	return products
 }
