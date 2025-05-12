@@ -22,6 +22,32 @@ func ArrayOfProducts(array []int) []int {
 	return result
 }
 
+// easier to understand 
+func ArrayOfProducts2(array []int) []int {
+	n := len(array)
+	result := make([]int, n)
+	leftToRightProducts := make([]int, n)
+	rightToLeftProducts := make([]int, n)
+
+	prefix := 1
+	for i := 0; i < n; i++ {
+		leftToRightProducts[i] = prefix
+		prefix *= array[i]
+	}
+
+	suffix := 1
+	for i := n - 1; i >= 0; i-- { 
+		rightToLeftProducts[i] = suffix
+		suffix *= array[i]
+	}
+
+	for i := 0; i < n; i++ { 
+		result[i] = leftToRightProducts[i] * rightToLeftProducts[i]
+	}
+
+	return result
+ }
+
 func ArrayOfProducts3(array []int) []int {
 	result := []int{}
 
