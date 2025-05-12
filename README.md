@@ -170,6 +170,7 @@
 - - - 📄 [readme.md](1.0.array-hashing/6.3.longest-peak/readme.md)
 - - 📂 [6.4.array-of-product](1.0.array-hashing/6.4.array-of-product)
 - - - 📄 [array-of-product.go](1.0.array-hashing/6.4.array-of-product/array-of-product.go)
+- - - 📄 [readme.md](1.0.array-hashing/6.4.array-of-product/readme.md)
 - 📂 [1.1.linked-list](1.1.linked-list)
 - - 📂 [doubly-linked-list](1.1.linked-list/doubly-linked-list)
 - - - 📂 [1.0.create-a-vowel-double-linked-list](1.1.linked-list/doubly-linked-list/1.0.create-a-vowel-double-linked-list)
