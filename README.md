@@ -175,6 +175,8 @@
 - - 📂 [6.5.first-duplicate](1.0.array-hashing/6.5.first-duplicate)
 - - - 📄 [first-duplicate.go](1.0.array-hashing/6.5.first-duplicate/first-duplicate.go)
 - - - 📄 [readme.md](1.0.array-hashing/6.5.first-duplicate/readme.md)
+- - 📂 [6.6.lexicographically-largest-string](1.0.array-hashing/6.6.lexicographically-largest-string)
+- - - 📄 [lexicographically-largest-string.go](1.0.array-hashing/6.6.lexicographically-largest-string/lexicographically-largest-string.go)
 - 📂 [1.1.linked-list](1.1.linked-list)
 - - 📂 [doubly-linked-list](1.1.linked-list/doubly-linked-list)
 - - - 📂 [1.0.create-a-vowel-double-linked-list](1.1.linked-list/doubly-linked-list/1.0.create-a-vowel-double-linked-list)
