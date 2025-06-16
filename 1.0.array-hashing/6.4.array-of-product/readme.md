@@ -1,7 +1,3 @@
-Here's a **comprehensive README** for the various implementations of the **"Array of Products"** algorithm in your Go code. It walks through each version with explanations, visuals, and complexity breakdowns.
-
----
-
 # 📦 Array of Products – Go Implementations
 
 ## 🧠 Problem Statement
