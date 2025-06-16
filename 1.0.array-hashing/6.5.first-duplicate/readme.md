@@ -1,7 +1,3 @@
-Here's a **comprehensive README** for your Go program that includes two implementations of a function to find the **first duplicate value** in an array. This breakdown covers the motivation, usage, implementation details, time/space complexity, and how each approach works.
-
----
-
 # 📦 FirstDuplicateValue – Go Implementation
 
 This Go package provides two implementations of the `FirstDuplicateValue` function, which finds the first integer that appears more than once in a given array. The second occurrence must have the **minimum index** compared to other duplicates.
