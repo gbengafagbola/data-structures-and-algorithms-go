@@ -1,7 +1,3 @@
-Here's a `README.md` for your Go package that implements three different approaches to solving the **Longest Peak** problem:
-
----
-
 # LongestPeak in Go
 
 This Go module provides multiple implementations for solving the **Longest Peak** problem, where a **peak** is defined as a contiguous sequence of strictly increasing integers followed by strictly decreasing integers, with a minimum length of 3.
