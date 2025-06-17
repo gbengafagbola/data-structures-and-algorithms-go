@@ -1,7 +1,3 @@
-Sure! Here's a simple and clean `README.md` for your Go `TransposeMatrix` function:
-
----
-
 ```markdown
 # Transpose Matrix in Go
 
