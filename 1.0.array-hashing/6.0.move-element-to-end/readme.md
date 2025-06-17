@@ -1,7 +1,3 @@
-Absolutely! Here's the updated `README.md` with your **new implementation** included and clearly explained alongside the previous ones.
-
----
-
 # 🧱 Move Element to End in Go
 
 This Go package provides **three** different approaches to solving a classic array manipulation problem:  
