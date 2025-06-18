@@ -100,6 +100,4 @@ Missing Number:    2
 - Demonstrates efficient problem-solving using Go.
 - Shows the importance of correctly iterating over arrays.
 
-Happy coding! 🚀
-
 [source](https://leetcode.com/problems/missing-number/description/)
