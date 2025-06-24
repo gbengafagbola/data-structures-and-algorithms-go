@@ -58,6 +58,9 @@ Hacks
 tracker i.e. primes := make([]bool, n) 
 sieve of erastothenes
 
+1. Sort an [][]int via it starting index.
+i.e intervals := [[0,1], [7,8], [2,4], [5,7], [8,9]]
+
 
 ## 💬 Key Questions to Discuss with Interviewer
 
