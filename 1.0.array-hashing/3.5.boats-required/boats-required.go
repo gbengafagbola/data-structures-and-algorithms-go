@@ -28,6 +28,30 @@ func rescueBoatsRequired(people []int, limit int) int {
 	return boats
 }
 
+
+func rescueBoatsRequired2(people []int, limit int) int {
+	count := 0
+	seen := make(map[int]bool)
+
+	for _, v := range people {
+		if v == limit {
+			count++ // single person takes a boat
+		} else if seen[limit - v] {
+			count++ // found a pair
+			delete(seen, limit - v)
+		} else {
+			seen[v] = true // mark this weight for future pairing
+		}
+	}
+
+	// Remaining unmatched people each need a boat
+	for range seen {
+		count++
+	}
+
+	return count
+}
+
 func main() {
 	people := []int{3, 2, 4, 5, 1}
 	limit := 6
