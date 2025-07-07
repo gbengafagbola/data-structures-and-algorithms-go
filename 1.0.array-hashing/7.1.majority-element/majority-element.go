@@ -1,6 +1,36 @@
 package main
 import "sort"
+
 func MajorityElement(array []int) int {
+    candidate := array[0]
+    count := 1
+
+    // Find candidate using Boyer-Moore Voting Algorithm
+    for i := 1; i < len(array); i++ {
+        if count == 0 {
+            candidate = array[i]
+        }
+        if array[i] == candidate {
+            count++
+        } else {
+            count--
+        }
+    }
+
+    // Verify candidate
+    count = 0
+    for _, num := range array {
+        if num == candidate {
+            count++
+        }
+    }
+    if count > len(array)/2 {
+        return candidate
+    }
+    return -1
+}
+
+func MajorityElement2(array []int) int {
     n := make(map[int]int)
 
     for _, num := range array {
