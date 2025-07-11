@@ -38,3 +38,9 @@ func IsPathCrossed(steps []string) bool {
 
 	return false
 }
+
+
+func main() {
+	fmt.Println(IsPathCrossed([]string{"north", "east", "south", "west"})) // true
+	fmt.Println(IsPathCrossed([]string{"north", "north", "east", "south"})) // false
+}
