@@ -8,7 +8,7 @@ func moveZeroes(nums []int) []int {
 	for i := 0; i < len(nums); i++ {
 		//we only have intrest with non-zero values in the nums array 
 		if nums[i] != 0 {  
-			//we have to ensure that the ith index is also not the same as the zeroIndex (not a compulsory check but a valid one)
+			//we have to ensure that the ith index is also not the same as the zeroIndex
 			if i != aZeroIndex {
 				nums[i], nums[aZeroIndex] = nums[aZeroIndex], nums[i]
 			}
