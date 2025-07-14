@@ -65,7 +65,7 @@ Total valid tuples: `2`.
 ### Code
 ```go
 func fourSumCount(A []int, B []int, C []int, D []int) int {
-    m := map[int]int{}
+m := map[int]int{}
 
     // Step 1: Compute sums of pairs from A and B and store in map
     for _, a := range A {

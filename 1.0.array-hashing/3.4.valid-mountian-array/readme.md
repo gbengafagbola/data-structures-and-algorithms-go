@@ -35,14 +35,14 @@ func validMountainArray(arr []int) bool {
 		index++
 	}
 
-	// Peak can't be the first or last element
+	// breaking out from the for loop above indicate we have identified our peak and hence the Peak can't be the first or last element in the array thereby we return false
 	if index == 1 || index == len(arr) {
 		return false
 	}
 
 	// Walk down
 	for index < len(arr) && arr[index] <= arr[index-1] {
-		index++
+		index++  
 	}
 
 	return index == len(arr)
