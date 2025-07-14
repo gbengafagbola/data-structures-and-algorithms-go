@@ -3,14 +3,16 @@ package main
 import "fmt"
 
 func moveZeroes(nums []int) []int {
-	zeroIndex := 0
+	aZeroIndex := 0
 
 	for i := 0; i < len(nums); i++ {
-		if nums[i] != 0 {
-			if i != zeroIndex {
-				nums[i], nums[zeroIndex] = nums[zeroIndex], nums[i]
+		//we only have intrest with non-zero values in the nums array 
+		if nums[i] != 0 {  
+			//we have to ensure that the ith index is also not the same as the zeroIndex (not a compulsory check but a valid one)
+			if i != aZeroIndex {
+				nums[i], nums[aZeroIndex] = nums[aZeroIndex], nums[i]
 			}
-			zeroIndex++
+			aZeroIndex++
 		}
 	}
 	return nums
@@ -18,7 +20,7 @@ func moveZeroes(nums []int) []int {
 
 
 func moveZeroes2(nums []int) []int {
-	zeroIndex := 0
+	zeroIndex := 0 
 	n := len(nums)
 
 	for nonZeroIndex := 0; nonZeroIndex < n; nonZeroIndex++ {
