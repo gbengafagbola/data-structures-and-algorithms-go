@@ -17,7 +17,7 @@ func lengthOfLongestSubString(s string) int {
 
 	for i := 0; i < len(s); i++ {
 		if val, ok := chars[s[i]]; ok {
-			left = int(math.Max(float64(left), float64(val+1)))
+			left = int(math.Max(float64(left), float64(val+1)))//or implement a < b func
 		}
 		right++
 		chars[s[i]] = i
