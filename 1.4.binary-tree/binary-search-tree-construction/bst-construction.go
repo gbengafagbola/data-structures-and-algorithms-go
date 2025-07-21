@@ -75,7 +75,7 @@ func removeNode(current *BST, value int, parent *BST) *BST {
 				} else {
 					// Single root node
 					node = nil
-				}
+				} 
 			} else if parent.Left == node {
 				if node.Left != nil {
 					parent.Left = node.Left
