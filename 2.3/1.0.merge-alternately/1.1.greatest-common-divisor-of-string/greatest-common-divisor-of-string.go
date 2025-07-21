@@ -28,21 +28,21 @@ func main() {
 
 
 
-func gcdOfStringsNonMatheaticalApproach(str1 string, str2 string) string {
-    p1 := 0
-    p2 := len(str2) - 1
-    unitLength := len(str2)
+// func gcdOfStringsNonMatheaticalApproach(str1 string, str2 string) string {
+//     p1 := 0
+//     p2 := len(str2) - 1
+//     unitLength := len(str2)
 
-    for p2 < len(str1) {
-        if str1[p1:p2+1] != str2 {
-            return ""
-        }
-        p1 += unitLength
-        p2 += unitLength
-    }
+//     for p2 < len(str1) {
+//         if str1[p1:p2+1] != str2 {
+//             return ""
+//         }
+//         p1 += unitLength
+//         p2 += unitLength
+//     }
 
-    if p1 == len(str1) {
-        return str2
-    }
-    return ""
-}
+//     if p1 == len(str1) {
+//         return str2
+//     }
+//     return ""
+// }
