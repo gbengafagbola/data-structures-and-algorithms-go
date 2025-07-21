@@ -1,8 +1,3 @@
-Absolutely! Here's a fun and simple `README.md` that explains the **GCD of Strings** like you're teaching a child — using real-life analogies, illustrations, and easy-to-understand concepts.
-
----
-
-```markdown
 # 🧵 GCD of Strings — Explained Like You're 5
 
 ## 📚 What Are We Trying to Do?
@@ -167,14 +162,4 @@ Try using:
 
 Hope that helps! 🎈
 
-```
-
----
-
-This version breaks the concept down using:
-- **Visual string repetition**
-- **Child-friendly analogy (building blocks, ribbon cutting)**
-- **Easy table to summarize results**
-
-Would you like this exported as a markdown file or shared as HTML for a website too?
 ```
