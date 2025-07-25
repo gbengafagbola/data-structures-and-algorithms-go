@@ -35,20 +35,20 @@ func main() {
 
 
 
-// func productExceptSelf(nums []int) []int {
-// 	result := []int{}
-// 	track := 0
+func productExceptSelfX(nums []int) []int {
+	result := []int{}
+	track := 0
 
-// 	for track < len(nums) {
-// 		multiple := 1
-// 		for i := 0; i < len(nums); i++ {
-// 			if track != i {
-// 				multiple *= nums[i]
-// 			}
-// 		}
-// 		result = append(result, multiple)
-// 		track++
-// 	}
+	for track < len(nums) {
+		multiple := 1
+		for i := 0; i < len(nums); i++ {
+			if track != i {
+				multiple *= nums[i]
+			}
+		}
+		result = append(result, multiple)
+		track++
+	}
 
-// 	return result
-// }
+	return result
+}
