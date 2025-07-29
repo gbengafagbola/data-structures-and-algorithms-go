@@ -2,10 +2,6 @@ package main
 
 import "fmt"
 
-
-
-
-
 func productExceptSelf(nums []int) []int {
 	result := []int{}
 
@@ -25,12 +21,6 @@ func productExceptSelf(nums []int) []int {
 	track++
 
 	return result
-}
-
-func main() {
-	nums := []int{1, 2, 3, 4}
-	result := productExceptSelf(nums)
-	fmt.Println(result) // Output: [24, 12, 8, 6]
 }
 
 func productExceptSelfY(nums []int) []int {
@@ -67,4 +57,10 @@ func productExceptSelfX(nums []int) []int {
 	}
 
 	return result
+}
+
+func main() {
+	nums := []int{1, 2, 3, 4}
+	result := productExceptSelf(nums)
+	fmt.Println(result) // Output: [24, 12, 8, 6]
 }
