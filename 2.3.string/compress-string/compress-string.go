@@ -1,4 +1,5 @@
 package main
+import "fmt"
 
 func compress(chars []byte) int {
     result := []byte{}
