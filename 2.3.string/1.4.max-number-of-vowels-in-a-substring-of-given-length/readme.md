@@ -198,6 +198,163 @@ This makes the algorithm highly **efficient** for large strings.
 
 ---
 
-## ✨ Conclusion
+Here's your updated `README.md`, now including both the **map-based** and **array-based** sliding window approaches, with a side-by-side comparison, code explanation, and when to prefer each.
 
-This solution uses the **sliding window technique** to avoid redundant work and efficiently find the maximum number of vowels in any substring of size `k`. It is optimal and elegant — operating in **linear time**.
+---
+
+# 🔤 `maxVowels` – Maximum Number of Vowels in a Substring of Length `k`
+
+---
+
+## 📚 Problem Statement
+
+Given a string `s` and an integer `k`, return the **maximum number of vowels** in any substring of length `k`.
+
+---
+
+## ✅ What Are Vowels?
+
+We are only interested in lowercase English vowels:
+
+```
+a, e, i, o, u
+```
+
+---
+
+## 🎯 Goal
+
+Find the **maximum number of vowels** in **any substring of length `k`** of the string `s`.
+
+---
+
+## 🚀 Approaches
+
+### 1️⃣ Map-Based Sliding Window (Classic)
+
+```go
+var vowels = map[byte]bool{
+	'a': true,
+	'e': true,
+	'i': true,
+	'o': true,
+	'u': true,
+}
+
+func maxVowels(s string, k int) int {
+	count := 0
+	for i := 0; i < k; i++ {
+		if vowels[s[i]] {
+			count++
+		}
+	}
+
+	maxCount := count
+
+	for i := k; i < len(s); i++ {
+		if vowels[s[i]] {
+			count++
+		}
+		if vowels[s[i-k]] {
+			count--
+		}
+		if count > maxCount {
+			maxCount = count
+		}
+	}
+
+	return maxCount
+}
+```
+
+### 2️⃣ Array-Based Sliding Window (Optimized)
+
+```go
+func maxVowels(s string, k int) int {
+	vowels := make([]int, 26)
+	vowels['a'-'a'] = 1
+	vowels['e'-'a'] = 1
+	vowels['i'-'a'] = 1
+	vowels['o'-'a'] = 1
+	vowels['u'-'a'] = 1
+
+	count := 0
+	for i := 0; i < k; i++ {
+		count += vowels[s[i]-'a']
+	}
+	maxCount := count
+
+	for i := k; i < len(s); i++ {
+		count -= vowels[s[i-k]-'a']
+		count += vowels[s[i]-'a']
+		if count > maxCount {
+			maxCount = count
+		}
+	}
+
+	return maxCount
+}
+```
+
+---
+
+## 🧠 Sliding Window Visual
+
+For input `s = "abciiidef"`, `k = 3`:
+
+```
+Window movement:
+
+[ a b c ] i i i d e f   → 1 vowel
+  a [ b c i ] i i d e f → 1 vowel
+    a b [ c i i ] i d e → 2 vowels
+      a b c [ i i i ] d → 3 vowels ✅ max
+         ...
+```
+
+---
+
+## ⚖️ Comparison
+
+| Feature          | Map-Based Approach         | Array-Based Approach              |
+| ---------------- | -------------------------- | --------------------------------- |
+| Vowel check      | `vowels[char]`             | `vowels[char - 'a']`              |
+| Time Complexity  | O(n)                       | O(n)                              |
+| Space Complexity | O(1) (for 5 vowel entries) | O(1) (fixed 26-element int array) |
+| Speed            | Slightly slower (hash)     | Slightly faster (index)           |
+| Clarity          | More readable              | Slightly more technical           |
+
+---
+
+## 🧪 Sample Test Cases
+
+```go
+fmt.Println(maxVowels("abciiidef", 3)) // Output: 3
+fmt.Println(maxVowels("aeiou", 2))    // Output: 2
+fmt.Println(maxVowels("leetcode", 3)) // Output: 2
+fmt.Println(maxVowels("rhythms", 4))  // Output: 0
+fmt.Println(maxVowels("tryhard", 4))  // Output: 1
+```
+
+---
+
+## 📈 Time and Space Complexity
+
+| Metric           | Value |
+| ---------------- | ----- |
+| Time Complexity  | O(n)  |
+| Space Complexity | O(1)  |
+
+Both versions are optimal in time and space.
+
+---
+
+## 🧠 Summary
+
+* Use the **map-based version** for readability and clarity.
+* Use the **array-based version** for **maximum speed** and **lower memory overhead**.
+* Both solve the problem in **linear time**, using an efficient **sliding window** technique.
+
+---
+
+Let me know if you’d like this in markdown file format or want to include a benchmark comparison too.
