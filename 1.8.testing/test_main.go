@@ -13,6 +13,10 @@ func TestSum(t *testing.T) {
 }
 
 
+func sum(a, b int) int {
+	return a + b
+}
+
 // to run test 
 // go test -v 
 
