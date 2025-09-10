@@ -4,7 +4,9 @@ import "fmt"
 
 // Main function to get river sizes
 func RiverSizes(matrix [][]int) []int {
+	
 	visited := make([][]bool, len(matrix))
+
 	for i := range matrix {
 		visited[i] = make([]bool, len(matrix[i]))
 	}
