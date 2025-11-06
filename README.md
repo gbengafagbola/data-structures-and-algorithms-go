@@ -1,11 +1,13 @@
 # Codebase Structure
 
 📂 [.](.)
+- 📄 [.DS_Store](.DS_Store)
 - 📂 [.github](.github)
 - - 📂 [workflows](.github/workflows)
 - - - 📄 [generate-tree.yml](.github/workflows/generate-tree.yml)
 - 📄 [.gitignore](.gitignore)
 - 📂 [1.0.array-hashing](1.0.array-hashing)
+- - 📄 [.DS_Store](1.0.array-hashing/.DS_Store)
 - - 📂 [1.0.sum-array](1.0.array-hashing/1.0.sum-array)
 - - - 📄 [readme.md](1.0.array-hashing/1.0.sum-array/readme.md)
 - - - 📄 [sum-array.go](1.0.array-hashing/1.0.sum-array/sum-array.go)
@@ -222,6 +224,9 @@
 - - 📂 [8.2.longest-one](1.0.array-hashing/8.2.longest-one)
 - - - 📄 [longest-one.go](1.0.array-hashing/8.2.longest-one/longest-one.go)
 - - - 📄 [readme.md](1.0.array-hashing/8.2.longest-one/readme.md)
+- - 📂 [8.3.sweet-and-savory](1.0.array-hashing/8.3.sweet-and-savory)
+- - - 📄 [readme.md](1.0.array-hashing/8.3.sweet-and-savory/readme.md)
+- - - 📄 [sweet-and-savory.go](1.0.array-hashing/8.3.sweet-and-savory/sweet-and-savory.go)
 - 📂 [1.1.linked-list](1.1.linked-list)
 - - 📂 [doubly-linked-list](1.1.linked-list/doubly-linked-list)
 - - - 📂 [0.0.constructing-linked-list](1.1.linked-list/doubly-linked-list/0.0.constructing-linked-list)
